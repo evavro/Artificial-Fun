@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WestWorld1">
+</Property><Property Name="Solution File" Value="Z:\tuschg\CS 365\AI Source\Buckland_Chapter2-State Machines\WestWorld1\WestWorld1.sln">
+</Property><Property Name="Date" Value="Thursday, January 28, 2010">
+</Property><Property Name="Time" Value="17:46 PM">
+</Property></Properties><Event ErrorLevel="0" Project="WestWorld1" Source="WestWorld1.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="WestWorld1" Source="WestWorld1.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="0" Project="WestWorld1" Source="WestWorld1.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="WestWorld1" Source="WestWorld1.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="WestWorld1.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="WestWorld1.sln" Description="Converted">
+</Event></UpgradeLog>
