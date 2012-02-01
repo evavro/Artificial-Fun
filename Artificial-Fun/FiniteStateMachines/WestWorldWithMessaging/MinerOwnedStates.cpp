@@ -229,6 +229,13 @@ void QuenchThirst::Enter(Miner* pMiner)
   {    
     pMiner->ChangeLocation(saloon);
 
+	// Let BarFly know that we've entered the bar
+	Dispatch->DispatchMessage(SEND_MSG_IMMEDIATELY, //time delay
+                              pMiner->ID(),        //ID of sender
+                              ent_Henry,            //ID of recipient
+                              Msg_EnterBar,   //the message
+                              NO_ADDITIONAL_INFO); 
+
     cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << "Boy, ah sure is thusty! Walking to the saloon";
   }
 }
@@ -251,7 +258,13 @@ void QuenchThirst::Exit(Miner* pMiner)
 
 bool QuenchThirst::OnMessage(Miner* pMiner, const Telegram& msg)
 {
-  //send msg to global message handler
+  // If we get insulted by someone, start a fight with them
+  switch(msg.Msg)
+  {
+	case Msg_Insult:
+		pMiner->GetFSM()->ChangeState(MinerFightin::Instance());
+  }
+  
   return false;
 }
 
@@ -289,4 +302,40 @@ bool EatStew::OnMessage(Miner* pMiner, const Telegram& msg)
   return false;
 }
 
+//---------------------------------------------- Fights Henry
 
+MinerFightin* MinerFightin::Instance()
+{
+  static MinerFightin instance;
+
+  return &instance;
+}
+
+
+void MinerFightin::Enter(Miner* pMiner)
+{
+	// send punch message
+	Dispatch->DispatchMessage(SEND_MSG_IMMEDIATELY,
+                               pMiner->ID(),
+                               ent_Henry,
+                               Msg_Punch,
+                               NO_ADDITIONAL_INFO);
+	// go back to quench thirst
+}
+
+void MinerFightin::Execute(Miner* pMiner)
+{
+
+}
+
+void MinerFightin::Exit(Miner* pMiner)
+{ 
+
+}
+
+
+bool MinerFightin::OnMessage(Miner* pMiner, const Telegram& msg)
+{
+  //send msg to global message handler
+  return false;
+}

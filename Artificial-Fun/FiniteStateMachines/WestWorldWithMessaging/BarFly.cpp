@@ -15,15 +15,16 @@ void BarFly::Update()
 void BarFly::IncrementIntoxication(const int value)
 {
 	m_iIntoxication += value;
-	if (m_iIntoxication < 0) m_iIntoxication = 0;
+	if (m_iIntoxication > MaxIntoxication()) m_iIntoxication = MaxIntoxication();
 }
 
 void BarFly::DecrementIntoxication(const int value)
 {
-	// insert code here
+	m_iIntoxication -= value;
+	if (m_iIntoxication < 0) m_iIntoxication = 0;
 }
 
-bool BarFly::Drunk()const4
+bool BarFly::Drunk()const
 {
 	if (m_iIntoxication >= MaxDrunk){ return true; }
 
@@ -32,5 +33,7 @@ bool BarFly::Drunk()const4
 
 bool BarFly::Sober()const
 {
-// insert code here
+	if (m_iIntoxication == 0){ return true; }
+
+		return false;
 }

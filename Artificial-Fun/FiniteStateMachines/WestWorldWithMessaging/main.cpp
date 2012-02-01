@@ -4,6 +4,7 @@
 #include "Locations.h"
 #include "Miner.h"
 #include "MinersWife.h"
+#include "BarFly.h"
 #include "EntityManager.h"
 #include "MessageDispatcher.h"
 #include "misc/ConsoleUtils.h"
@@ -27,6 +28,9 @@ int main()
 
   //create his wife
   MinersWife* Elsa = new MinersWife(ent_Elsa);
+
+  //create barfly
+  BarFly* Henry = new BarFly(ent_Henry);
 
   //register them with the entity manager
   EntityMgr->RegisterEntity(Bob);

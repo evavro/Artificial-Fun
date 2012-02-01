@@ -1,6 +1,23 @@
 #ifndef BARFLY_H
 #define BARFLY_H
+/*
+ * BarFly.h
+ * a Barfly
+ *
+ * Thomas Sell && Erik Vavro
+ */
 
+#include <string>
+#include <cassert>
+#include <iostream>
+
+#include "BaseGameEntity.h"
+#include "Locations.h"
+#include "misc/ConsoleUtils.h"
+#include "BarflyOwnedStates.h"
+#include "fsm/StateMachine.h"
+
+// maximun drunkiness
 const int MaxDrunk = 5;
 
 class BarFly : public BaseGameEntity
@@ -14,7 +31,7 @@ public:
 	BarFly(int id): m_iIntoxication(0), BaseGameEntity(id)
 	{
 		//set up the state machine
-		m_pStateMachine = new StateMachine<BarFly>(this);3
+		m_pStateMachine = new StateMachine<BarFly>(this);
 		m_pStateMachine->SetCurrentState(Carousing::Instance());
 	}
 
@@ -29,6 +46,7 @@ public:
   virtual bool  HandleMessage(const Telegram& msg);
   StateMachine<BarFly>* GetFSM()const{return m_pStateMachine;}
     //----------------------------------------------------accessors
+  int	 MaxIntoxication()const{return MaxDrunk;}
   int    Intoxication()const{return m_iIntoxication;}
   void   SetIntoxication(int intoxLevel){m_iIntoxication=intoxLevel;}
   void   IncrementIntoxication(const int value);
