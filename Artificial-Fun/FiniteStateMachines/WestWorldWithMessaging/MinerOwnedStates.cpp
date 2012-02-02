@@ -263,6 +263,8 @@ bool QuenchThirst::OnMessage(Miner* pMiner, const Telegram& msg)
   {
 	case Msg_Insult:
 		pMiner->GetFSM()->ChangeState(MinerFightin::Instance());
+		
+		return true;
   }
   
   return false;
@@ -320,7 +322,10 @@ void MinerFightin::Enter(Miner* pMiner)
                                ent_Henry,
                                Msg_Punch,
                                NO_ADDITIONAL_INFO);
+
+	cout << "\n" << GetNameOfEntity(pMiner->ID()) << ": " << " putting his fighting skills to use";
 	// go back to quench thirst
+	pMiner->GetFSM()->RevertToPreviousState();
 }
 
 void MinerFightin::Execute(Miner* pMiner)

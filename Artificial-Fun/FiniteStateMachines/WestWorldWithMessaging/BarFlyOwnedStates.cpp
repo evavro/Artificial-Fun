@@ -30,7 +30,7 @@ Carousing* Carousing::Instance()
 void Carousing::Enter(BarFly* pBarFly)
 {
 	// send message ?
-	cout << GetNameOfEntity(pBarFly->ID()) << " woke up from a long night of drinking and fighting";
+	cout << "\n" << GetNameOfEntity(pBarFly->ID()) << " woke up from a long night of drinking and fighting";
 }
 
 
@@ -53,6 +53,15 @@ void Carousing::Exit(BarFly* pBarFly)
 bool Carousing::OnMessage(BarFly* pBarFly, const Telegram& msg)
 {
   //send msg to global message handler
+	switch(msg.Msg)
+  {
+	case Msg_EnterBar:
+		SetTextColor(BACKGROUND_RED|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
+		cout << "\n" << "Message handled by " << GetNameOfEntity(pBarFly->ID()) 
+     << " at time: " << Clock->GetCurrentTime();
+
+		return true;
+  }
   return false;
 }
 
@@ -68,7 +77,8 @@ FightinDrunk* FightinDrunk::Instance()
 
 void FightinDrunk::Enter(BarFly* pBarFly)
 {
-	cout << GetNameOfEntity(pBarFly->ID()) << " is hammered and lookin for a fight...";
+	SetTextColor(FOREGROUND_BLUE|FOREGROUND_INTENSITY);
+	cout << "\n" << GetNameOfEntity(pBarFly->ID()) << " is hammered and lookin for a fight...";
 }
 
 
@@ -82,16 +92,9 @@ void FightinDrunk::Exit(BarFly* pBarFly)
 {
 	// Insult miner bob, change state to fighting
 	// send msg
-	cout << GetNameOfEntity(pBarFly->ID()) << " is going to kick some ass";
+	SetTextColor(FOREGROUND_BLUE|FOREGROUND_INTENSITY);
+	cout << "/" << GetNameOfEntity(pBarFly->ID()) << " is going to kick some ass";
 
-	/*//let the wife know I'm home
-    Dispatch->DispatchMessage(SEND_MSG_IMMEDIATELY, //time delay
-                              pMiner->ID(),        //ID of sender
-                              ent_Elsa,            //ID of recipient
-                              Msg_HiHoneyImHome,   //the message
-                              NO_ADDITIONAL_INFO);*/
-
-	//pBarFly->GetFSM()->ChangeState(Fightin::Instance());
 }
 
 
@@ -100,10 +103,15 @@ bool FightinDrunk::OnMessage(BarFly* pBarFly, const Telegram& msg)
   switch(msg.Msg)
   {
 	case Msg_EnterBar:
-		pBarFly->GetFSM()->ChangeState(Fightin::Instance());
-  }
+		SetTextColor(BACKGROUND_RED|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
+		cout << "\nMessage handled by " << GetNameOfEntity(pBarFly->ID()) 
+     << " at time: " << Clock->GetCurrentTime();
 
-  return true;
+		pBarFly->GetFSM()->ChangeState(Fightin::Instance());
+
+		return true;
+  }
+  return false;
 }
 
 //------------------------------------------------------------------------
@@ -118,6 +126,8 @@ Fightin* Fightin::Instance()
 
 void Fightin::Enter(BarFly* pBarFly)
 {
+	SetTextColor(FOREGROUND_BLUE|FOREGROUND_INTENSITY);
+	cout << "\n" << GetNameOfEntity(pBarFly->ID()) << ": " << "I'm gonna kick your ass";
 
 	// Let the person who just entered the bar know we want to fight by insulting them
 	Dispatch->DispatchMessage(SEND_MSG_IMMEDIATELY,
@@ -145,9 +155,15 @@ bool Fightin::OnMessage(BarFly* pBarFly, const Telegram& msg)
   switch(msg.Msg)
   {
 	case Msg_Punch:
+		SetTextColor(BACKGROUND_RED|FOREGROUND_RED|FOREGROUND_GREEN|FOREGROUND_BLUE);
+		cout << "\nMessage handled by " << GetNameOfEntity(pBarFly->ID()) 
+     << " at time: " << Clock->GetCurrentTime();
+
+		SetTextColor(FOREGROUND_BLUE|FOREGROUND_INTENSITY);
 		cout << "\n" << GetNameOfEntity(pBarFly->ID()) << " has just been punched in the face!";
 
 		pBarFly->GetFSM()->ChangeState(OutCold::Instance());
+		return true;
   }
   return false;
 }
@@ -164,8 +180,10 @@ OutCold* OutCold::Instance()
 
 void OutCold::Enter(BarFly* pBarFly)
 {
+	SetTextColor(FOREGROUND_BLUE|FOREGROUND_INTENSITY);
+	cout << "\n" << GetNameOfEntity(pBarFly->ID()) << ": " << "Knocked out cold and sleeping like a baby";
 
-	// Let the person who just entered the bar know we want to fight by insulting them
+	// Tell miner bob that we just got knocked out
 	Dispatch->DispatchMessage(SEND_MSG_IMMEDIATELY,
                                pBarFly->ID(),
                                ent_Miner_Bob,
@@ -186,7 +204,8 @@ void OutCold::Execute(BarFly* pBarFly)
 
 void OutCold::Exit(BarFly* pBarFly)
 {
-	cout << "\n" << GetNameOfEntity(pBarFly->ID()) << " is waking up from being passed out drunk";
+	SetTextColor(FOREGROUND_BLUE|FOREGROUND_INTENSITY);
+	cout << "\n" << GetNameOfEntity(pBarFly->ID()) << ": " << "Waking up from being passed out drunk";
 }
 
 
