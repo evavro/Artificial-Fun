@@ -1,0 +1,40 @@
+﻿Build started 2/2/2012 2:52:43 PM.
+     1>Project "C:\Users\Teaja\Documents\Artificial-Fun\Artificial-Fun\FiniteStateMachines\WestWorldWithMessaging\WestWorldWithMessaging.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating ".\Debug\WestWorldWithMessaging.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Users\Teaja\Documents\Artificial-Fun\Artificial-Fun\Common" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt BarFlyOwnedStates.cpp MinerOwnedStates.cpp
+         MinerOwnedStates.cpp
+         BarFlyOwnedStates.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug/WestWorldWithMessaging.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Debug\WestWorldWithMessaging.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\Debug/WestWorldWithMessaging.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /IMPLIB:".\Debug\WestWorldWithMessaging.lib" /MACHINE:X86 .\Debug\WestWorldWithMessaging.exe.embed.manifest.res
+         .\Debug/BarFly.obj
+         .\Debug/BarFlyOwnedStates.obj
+         .\Debug/BaseGameEntity.obj
+         .\Debug/EntityManager.obj
+         .\Debug/main.obj
+         .\Debug/MessageDispatcher.obj
+         .\Debug/Miner.obj
+         .\Debug/MinerOwnedStates.obj
+         .\Debug/MinersWife.obj
+         .\Debug/MinersWifeOwnedStates.obj
+         .\Debug/CrudeTimer.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\Debug\WestWorldWithMessaging.exe.embed.manifest" /manifest .\Debug\WestWorldWithMessaging.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         WestWorldWithMessaging.vcxproj -> C:\Users\Teaja\Documents\Artificial-Fun\Artificial-Fun\FiniteStateMachines\WestWorldWithMessaging\.\Debug\WestWorldWithMessaging.exe
+       BscMake:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o".\Debug/WestWorldWithMessaging.bsc" .\Debug\BarFly.sbr .\Debug\BarFlyOwnedStates.sbr .\Debug\BaseGameEntity.sbr .\Debug\EntityManager.sbr .\Debug\main.sbr .\Debug\MessageDispatcher.sbr .\Debug\Miner.sbr .\Debug\MinerOwnedStates.sbr .\Debug\MinersWife.sbr .\Debug\MinersWifeOwnedStates.sbr .\Debug\CrudeTimer.sbr
+       FinalizeBuildStatus:
+         Deleting file ".\Debug\WestWorldWithMessaging.unsuccessfulbuild".
+         Touching ".\Debug\WestWorldWithMessaging.lastbuildstate".
+     1>Done Building Project "C:\Users\Teaja\Documents\Artificial-Fun\Artificial-Fun\FiniteStateMachines\WestWorldWithMessaging\WestWorldWithMessaging.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:59.52
