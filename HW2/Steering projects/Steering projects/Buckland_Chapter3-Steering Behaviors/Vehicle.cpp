@@ -96,7 +96,7 @@ void Vehicle::Update(double time_elapsed)
     m_vSide = m_vHeading.Perp();
   }
 
-  //EnforceNonPenetrationConstraint(this, World()->Agents());
+  EnforceNonPenetrationConstraint(this, World()->Agents());
 
   //treat the screen as a toroid
   WrapAround(m_vPos, m_pWorld->cxClient(), m_pWorld->cyClient());
