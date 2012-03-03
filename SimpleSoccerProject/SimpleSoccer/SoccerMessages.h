@@ -8,6 +8,7 @@ enum MessageType
   Msg_ReceiveBall,
   Msg_PassToMe,
   Msg_SupportAttacker,
+  Msg_DefendGoal,
   Msg_GoHome,
   Msg_Wait
 };

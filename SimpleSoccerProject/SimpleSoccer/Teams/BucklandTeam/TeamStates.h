@@ -64,6 +64,29 @@ public:
   bool OnMessage(AbstSoccerTeam*, const Telegram&){return false;}
 };
 
+// Makes players huddle tightly around the goal instead of just loosely defending it
+//------------------------------------------------------------------------
+class DefendGoal : public State<AbstSoccerTeam>
+{ 
+private:
+  
+  Defending(){}
+
+public:
+
+    //this is a singleton
+  static Defending* Instance();
+
+  void Enter(AbstSoccerTeam* team);
+
+  void Execute(AbstSoccerTeam* team);
+
+  void Exit(AbstSoccerTeam* team);
+
+  bool OnMessage(AbstSoccerTeam*, const Telegram&){return false;}
+};
+
+
 //------------------------------------------------------------------------
 class PrepareForKickOff : public State<AbstSoccerTeam>
 { 

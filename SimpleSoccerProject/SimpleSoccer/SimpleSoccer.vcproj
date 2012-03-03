@@ -340,10 +340,6 @@
 					/>
 				</FileConfiguration>
 			</File>
-			<File
-				RelativePath=".\TeamMaker.cpp"
-				>
-			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -799,11 +795,11 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="..\Common\iniFileLoaderBase.h"
+				RelativePath="..\Common\misc\iniFileLoaderBase.h"
 				>
 			</File>
 			<File
-				RelativePath="..\Common\misc\iniFileLoaderBase.h"
+				RelativePath="..\Common\iniFileLoaderBase.h"
 				>
 			</File>
 			<File
@@ -957,6 +953,10 @@
 					>
 				</File>
 				<File
+					RelativePath=".\TeamMaker.cpp"
+					>
+				</File>
+				<File
 					RelativePath=".\Teams\BucklandTeam\TeamStates.cpp"
 					>
 				</File>
@@ -990,6 +990,30 @@
 				</File>
 				<File
 					RelativePath=".\Teams\MyTeam\MyTeamStates.h"
+					>
+				</File>
+				<File
+					RelativePath=".\Play.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\Play.h"
+					>
+				</File>
+				<File
+					RelativePath=".\PlayGenerator.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\PlayGenerator.h"
+					>
+				</File>
+				<File
+					RelativePath=".\PlayState.cpp"
+					>
+				</File>
+				<File
+					RelativePath=".\PlayState.h"
 					>
 				</File>
 			</Filter>

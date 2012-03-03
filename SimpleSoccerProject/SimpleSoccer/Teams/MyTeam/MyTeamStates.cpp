@@ -135,6 +135,9 @@ void MyPrepareForKickOff::Enter(AbstSoccerTeam* team)
   team->SetReceiver(NULL);
   team->SetPlayerClosestToBall(NULL);
 
+  // TODO: Find a predefined play
+  /// predefinedPlay()
+
   //send Msg_GoHome to each player.
   team->ReturnAllFieldPlayersToHome();
 }

@@ -193,7 +193,26 @@ public:
 };
 
 
+//------------------------------------------------------------------------
+class FakeOutDribble: public State<FieldPlayer>
+{
+private:
+  
+  FakeOutDribble(){}
 
+public:
+
+  //this is a singleton
+  static FakeOutDribble* Instance();
+
+  void Enter(FieldPlayer* player);
+
+  void Execute(FieldPlayer* player);
+
+  void Exit(FieldPlayer* player);
+
+  bool OnMessage(FieldPlayer*, const Telegram&){return false;}
+};
 
   
 #endif
