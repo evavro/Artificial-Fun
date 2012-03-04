@@ -81,6 +81,13 @@ bool GlobalPlayerState::OnMessage(FieldPlayer* player, const Telegram& telegram)
 
     break;
 
+ case Msg_DefendGoal:
+	 {
+
+	 }
+
+	 break;
+
  case Msg_Wait:
     {
       //change the state
@@ -730,7 +737,22 @@ void ReceiveBall::Exit(FieldPlayer* player)
 
 
 
- 
+//************************************************************************     FAKEOUT DRIBBLE
 
+FakeOutDribble* FakeOutDribble::Instance()
+{
+  static FakeOutDribble instance;
 
+  return &instance;
+}
 
+void Enter(FieldPlayer* player) {
+	return;
+}
+
+void Execute(FieldPlayer* player) {
+	// Only call this if we have "faked out" a sufficient distance
+	//player->GetFSM()->ChangeState(Dribble::Instance());
+
+	return;
+}

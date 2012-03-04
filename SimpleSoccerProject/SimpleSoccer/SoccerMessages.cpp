@@ -17,6 +17,10 @@ inline std::string MessageToString(int msg)
 
     return "Msg_SupportAttacker";
 
+  case Msg_DefendGoal:
+
+    return "Msg_DefendGoal";
+
   case Msg_GoHome:
 
     return "Msg_GoHome";

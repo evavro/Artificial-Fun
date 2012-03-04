@@ -62,7 +62,8 @@ private:
     arrive             = 0x0002,
     separation         = 0x0004,
     pursuit            = 0x0008,
-    interpose          = 0x0010
+    interpose          = 0x0010,
+	circle			   = 0x0020,
   };
 
   //used by group behaviors to tag neighbours
@@ -149,6 +150,7 @@ public:
   void ArriveOn(){m_iFlags |= arrive;}
   void PursuitOn(){m_iFlags |= pursuit;}
   void SeparationOn(){m_iFlags |= separation;}
+  void CircleOn(){m_iFlags |= separation;}
   void InterposeOn(double d){m_iFlags |= interpose; m_dInterposeDist = d;}
 
   
