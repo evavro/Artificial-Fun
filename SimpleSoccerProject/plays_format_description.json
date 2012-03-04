@@ -1,0 +1,49 @@
+// Figured we may as well use JSON for implementing our plays, straight forward and easy to implement
+
+// pX = any player (p1, p2, p3, etc. assignments are randomized at the beginning of the game)
+// pB = player that currently has the ball (potentially a new player at each state)
+// pX = "X,Y" -> make player X move to region X,Y
+
+// Will be parsed by: http://libjson.sourceforge.net/
+
+{
+	"plays": [
+		// Start of a new play
+		{
+			"states": [
+				// start state
+				{
+					"positions": [
+						// Don't have to specify a region for every player; those without a position will act impulsively
+						{"p1": "0"},
+						{"p2": "5"},
+						{"p3": "4"},
+						{"p4": "3"},
+						{"pB": "2"}
+					],
+
+					// When everyone is in position, this is step that needs to be completed in order to transition to the next state
+					// If no trans is defined, they will continue to the next state (move positions)
+					// If multiple trans are defined, one will be selected randomly. (following 2 are the only possible transitions I could think 
+					"trans": { "pass" : "p1" },
+					"trans": {  "chase_pass" : ["p1", "100,200"] }
+				}, // end state
+				
+				// Last state of a play doesn't need a trans. pB will attempt to make a goal
+				{
+					"positions": [
+					
+					]
+				}],
+				
+				// If continue = true and a play becomes impossible, then, once our team has the ball again, players will revert back to the last state of the play and try to complete it
+				"continue" : "true"
+			},
+		},
+
+		// Start of a new play
+		{
+
+		}
+	}]
+}

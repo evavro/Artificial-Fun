@@ -1,0 +1,36 @@
+{
+	"plays": [
+		// Start of a new play
+		{
+			"states": [
+				{
+					"positions": [
+						{"p1": "0"},
+						{"p2": "5"},
+						{"p3": "4"},
+						{"p4": "3"},
+						{"pB": "2"}
+					],
+
+					"trans": { "pass" : "p1" },
+					"trans": {  "chase_pass" : ["p1", "10"] }
+				},
+
+				{
+					"positions": [
+					
+					]
+				}],
+			},
+
+
+			// If continue = true and a play becomes impossible, then, once our team has the ball again, players will revert back to the last state of the play and try to complete it
+			"continue" : "true"
+		},
+
+		// Start of a new play
+		{
+
+		}
+	}]
+}
