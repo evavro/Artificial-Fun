@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="org.eclipse.cdt.msvc.toolchain.dll.debug.302070309">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="org.eclipse.cdt.msvc.toolchain.dll.debug.302070309" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration buildProperties="" id="org.eclipse.cdt.msvc.toolchain.dll.debug.302070309" name="Debug" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="org.eclipse.cdt.msvc.toolchain.dll.debug.302070309.1181691806" name="/" resourcePath="">
+						<toolChain id="org.eclipse.cdt.msvc.toolchain.dll.debug.600238113" name="org.eclipse.cdt.msvc.toolchain.dll.debug" superClass="org.eclipse.cdt.msvc.toolchain.dll.debug">
+							<targetPlatform id="org.eclipse.cdt.msvc.targetPlatform.dll.debug.804176703" superClass="org.eclipse.cdt.msvc.targetPlatform.dll.debug"/>
+							<builder buildPath="${workspace_loc:/SimpleSoccerProject/Debug}" id="org.eclipse.cdt.msvc.builder.1507586592" managedBuildOn="false" name="CDT Internal Builder.Debug" superClass="org.eclipse.cdt.msvc.builder"/>
+							<tool id="org.eclipse.cdt.msvc.cl.c.dll.debug.1337373176" name="C Compiler (cl)" superClass="org.eclipse.cdt.msvc.cl.c.dll.debug"/>
+							<tool id="org.eclipse.cdt.msvc.cl.dll.debug.926246318" name="C++ Compiler (cl)" superClass="org.eclipse.cdt.msvc.cl.dll.debug"/>
+							<tool id="org.eclipse.cdt.msvc.rc.dll.debug.871394773" name="Resource Compiler (rc)" superClass="org.eclipse.cdt.msvc.rc.dll.debug"/>
+							<tool id="org.eclipse.cdt.msvc.link.dll.debug.12704835" name="Linker (link)" superClass="org.eclipse.cdt.msvc.link.dll.debug"/>
+							<tool id="org.eclipse.cdt.msvc.lib.1753753674" name="Library Manager (lib)" superClass="org.eclipse.cdt.msvc.lib"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="SimpleSoccerProject.null.2073467326" name="SimpleSoccerProject"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+</cproject>
