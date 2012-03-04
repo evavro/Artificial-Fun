@@ -1,4 +1,5 @@
 #include "PlayGenerator.h"
+#include "../../misc/libjson.h"
 
 PlayGenerator::PlayGenerator(void)
 {
