@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b234c943-12d0-457f-84ef-2c6aa44c9435}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{72c07da3-5efc-465d-a4c5-f12295d89c4f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b5dc49bb-3179-4815-8fba-27db967e3b9f}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="States and State Machine">
+      <UniqueIdentifier>{fc396914-35eb-494e-af98-7e652247b538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Messaging">
+      <UniqueIdentifier>{b65e26a2-9aa8-4bbc-bc5b-e9848105a159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity related">
+      <UniqueIdentifier>{b030bc30-175c-4ef1-925d-e3f43db7e959}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{0d67e960-c7c5-409c-8308-e2260f9e8a4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Teams">
+      <UniqueIdentifier>{36f47718-ae75-45d4-8d33-dc597b8bd1d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Teams\BucklandTeam">
+      <UniqueIdentifier>{53f2399f-1f56-43a6-9d0a-bf72a6b49d1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Teams\MyTeam">
+      <UniqueIdentifier>{e453cd76-6b3d-4db0-8b82-b1c7af8cdab9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstSoccerTeam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SoccerPitch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SteeringBehaviors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SupportSpotCalculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TeamMaker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Messaging\MessageDispatcher.cpp">
+      <Filter>Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="SoccerMessages.cpp">
+      <Filter>Messaging</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Game\BaseGameEntity.cpp">
+      <Filter>Entity related</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Game\EntityManager.cpp">
+      <Filter>Entity related</Filter>
+    </ClCompile>
+    <ClCompile Include="FieldPlayer.cpp">
+      <Filter>Entity related</Filter>
+    </ClCompile>
+    <ClCompile Include="Goalkeeper.cpp">
+      <Filter>Entity related</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerBase.cpp">
+      <Filter>Entity related</Filter>
+    </ClCompile>
+    <ClCompile Include="SoccerBall.cpp">
+      <Filter>Entity related</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\misc\Cgdi.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Debug\DebugConsole.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\misc\FrameCounter.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\misc\iniFileLoaderBase.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Time\PrecisionTimer.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\2D\Vector2d.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\misc\WindowUtils.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="Teams\BucklandTeam\FieldPlayerStates.cpp">
+      <Filter>Teams\BucklandTeam</Filter>
+    </ClCompile>
+    <ClCompile Include="Teams\BucklandTeam\GoalKeeperStates.cpp">
+      <Filter>Teams\BucklandTeam</Filter>
+    </ClCompile>
+    <ClCompile Include="Teams\BucklandTeam\SoccerTeam.cpp">
+      <Filter>Teams\BucklandTeam</Filter>
+    </ClCompile>
+    <ClCompile Include="Teams\BucklandTeam\SoccerTeamMaker.cpp">
+      <Filter>Teams\BucklandTeam</Filter>
+    </ClCompile>
+    <ClCompile Include="Teams\BucklandTeam\TeamStates.cpp">
+      <Filter>Teams\BucklandTeam</Filter>
+    </ClCompile>
+    <ClCompile Include="Teams\MyTeam\MySoccerTeam.cpp">
+      <Filter>Teams\MyTeam</Filter>
+    </ClCompile>
+    <ClCompile Include="Teams\MyTeam\MySoccerTeamMaker.cpp">
+      <Filter>Teams\MyTeam</Filter>
+    </ClCompile>
+    <ClCompile Include="Teams\MyTeam\MyTeamStates.cpp">
+      <Filter>Teams\MyTeam</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstSoccerTeam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Goal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParamLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoccerPitch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SoccerTeamFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SteeringBehaviors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SupportSpotCalculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TeamMaker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\FSM\State.h">
+      <Filter>States and State Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\FSM\StateMachine.h">
+      <Filter>States and State Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Messaging\MessageDispatcher.h">
+      <Filter>Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="SoccerMessages.h">
+      <Filter>Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Messaging\Telegram.h">
+      <Filter>Messaging</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Game\BaseGameEntity.h">
+      <Filter>Entity related</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Game\EntityFunctionTemplates.h">
+      <Filter>Entity related</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Game\EntityManager.h">
+      <Filter>Entity related</Filter>
+    </ClInclude>
+    <ClInclude Include="FieldPlayer.h">
+      <Filter>Entity related</Filter>
+    </ClInclude>
+    <ClInclude Include="Goalkeeper.h">
+      <Filter>Entity related</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Game\MovingEntity.h">
+      <Filter>Entity related</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerBase.h">
+      <Filter>Entity related</Filter>
+    </ClInclude>
+    <ClInclude Include="SoccerBall.h">
+      <Filter>Entity related</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\misc\autolist.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\2D\C2DMatrix.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\misc\Cgdi.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Debug\DebugConsole.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\misc\FrameCounter.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\2D\geometry.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\iniFileLoaderBase.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\misc\iniFileLoaderBase.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Time\PrecisionTimer.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Game\Region.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Time\Regulator.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\2D\Transformations.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\misc\utils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\utils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\2D\Vector2D.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\2D\Wall2D.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\misc\WindowUtils.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="Teams\BucklandTeam\FieldPlayerStates.h">
+      <Filter>Teams\BucklandTeam</Filter>
+    </ClInclude>
+    <ClInclude Include="Teams\BucklandTeam\SoccerTeam.h">
+      <Filter>Teams\BucklandTeam</Filter>
+    </ClInclude>
+    <ClInclude Include="Teams\BucklandTeam\SoccerTeamMaker.h">
+      <Filter>Teams\BucklandTeam</Filter>
+    </ClInclude>
+    <ClInclude Include="Teams\BucklandTeam\TeamStates.h">
+      <Filter>Teams\BucklandTeam</Filter>
+    </ClInclude>
+    <ClInclude Include="Teams\MyTeam\MySoccerTeam.h">
+      <Filter>Teams\MyTeam</Filter>
+    </ClInclude>
+    <ClInclude Include="Teams\MyTeam\MySoccerTeamMaker.h">
+      <Filter>Teams\MyTeam</Filter>
+    </ClInclude>
+    <ClInclude Include="Teams\MyTeam\MyTeamStates.h">
+      <Filter>Teams\MyTeam</Filter>
+    </ClInclude>
+    <ClInclude Include="Teams\BucklandTeam\GoalKeeperStates.h">
+      <Filter>Teams\BucklandTeam</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Params.ini">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Script1.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
