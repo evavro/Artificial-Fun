@@ -161,3 +161,5 @@ void MyPrepareForKickOff::Exit(AbstSoccerTeam* team)
 }
 
 //************************************************************************ EXECUTE PLAY
+
+// This will be the main controller

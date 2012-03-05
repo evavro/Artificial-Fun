@@ -785,15 +785,39 @@ FakeOutDribble* FakeOutDribble::Instance()
   return &instance;
 }
 
-void Enter(FieldPlayer* player) {
+void FakeOutDribble::Enter(FieldPlayer* player) {
 	return;
 }
 
-void Execute(FieldPlayer* player) {
+void FakeOutDribble::Execute(FieldPlayer* player) {
 	// Only call this if we have "faked out" a sufficient distance
 	//player->GetFSM()->ChangeState(Dribble::Instance());
 
 	// set a destination point thats shortly in front of where we're facing
 	// move there, then abrubtly choose a relatively opposite angle (depending on where opponents are and what not)
+	return;
+}
+
+
+
+
+//************************************************************************     INTERCEPT BALL
+
+InterceptBall* InterceptBall::Instance()
+{
+  static InterceptBall instance;
+
+  return &instance;
+}
+
+void InterceptBall::Enter(FieldPlayer* player) {
+	return;
+}
+
+void InterceptBall::Execute(FieldPlayer* player) {
+	// SupportAttacker::Execute
+
+	// player->Steering()->SetTarget
+
 	return;
 }

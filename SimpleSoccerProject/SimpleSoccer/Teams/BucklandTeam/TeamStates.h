@@ -70,7 +70,7 @@ class DefendGoal : public State<AbstSoccerTeam>
 { 
 private:
   
-  Defending(){}
+	DefendGoal(){}
 
 public:
 

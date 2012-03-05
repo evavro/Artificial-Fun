@@ -83,6 +83,8 @@ public:
   bool OnMessage(AbstSoccerTeam*, const Telegram&){return false;}
 };
 
+// TODO: Move DefendGoal from TeamStates.h to here
+
 //------------------------------------------------------------------------
 class ExecutePlay : public State<AbstSoccerTeam>
 {

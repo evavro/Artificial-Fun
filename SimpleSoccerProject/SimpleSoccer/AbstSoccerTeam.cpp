@@ -643,7 +643,7 @@ bool AbstSoccerTeam::isOpponentWithinRadius(Vector2D pos, double rad)
 }
 
 // TODO: Test this and then just make isOpponentWithinRadius check for size > 0. less code
-std::vector<PlayerBase*> getOpponentsWithinRadius(Vector2D pos, double rad)
+std::vector<PlayerBase*> AbstSoccerTeam::getOpponentsWithinRadius(Vector2D pos, double rad)
 {
   std::vector<PlayerBase*> found;
   std::vector<PlayerBase*>::const_iterator end = Opponents()->Members().end();

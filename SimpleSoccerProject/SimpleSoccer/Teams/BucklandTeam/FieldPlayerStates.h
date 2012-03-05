@@ -217,6 +217,29 @@ public:
 
 
 //------------------------------------------------------------------------
+class InterceptBall: public State<FieldPlayer>
+{
+private:
+
+	InterceptBall(){}
+
+public:
+
+  //this is a singleton
+  static InterceptBall* Instance();
+
+  void Enter(FieldPlayer* player);
+
+  void Execute(FieldPlayer* player);
+
+  void Exit(FieldPlayer* player);
+
+  bool OnMessage(FieldPlayer*, const Telegram&){return false;}
+};
+
+
+
+//------------------------------------------------------------------------
 class MoveToRegion: public State<FieldPlayer>
 {
 private:
