@@ -83,8 +83,29 @@ public:
   bool OnMessage(AbstSoccerTeam*, const Telegram&){return false;}
 };
 
-// TODO: Move DefendGoal from TeamStates.h to here
+// Makes players huddle tightly around the goal instead of just loosely defending it
+//------------------------------------------------------------------------
+class DefendGoal : public State<AbstSoccerTeam>
+{
+private:
 
+	DefendGoal(){}
+
+public:
+
+    //this is a singleton
+  static DefendGoal* Instance();
+
+  void Enter(AbstSoccerTeam* team);
+
+  void Execute(AbstSoccerTeam* team);
+
+  void Exit(AbstSoccerTeam* team);
+
+  bool OnMessage(AbstSoccerTeam*, const Telegram&){return false;}
+};
+
+// Executes a play defined in play_config.json
 //------------------------------------------------------------------------
 class ExecutePlay : public State<AbstSoccerTeam>
 {

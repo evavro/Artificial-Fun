@@ -3,7 +3,7 @@
 
 const MySoccerTeamMaker MySoccerTeamMaker::registerThis;
 
-MySoccerTeamMaker::MySoccerTeamMaker() : TeamMaker("MySoccerTeam") {}
+MySoccerTeamMaker::MySoccerTeamMaker() : TeamMaker("Blue Eyes White Dragons") {} // TeamMaker - ?
 
 AbstSoccerTeam* MySoccerTeamMaker::makeTeam(Goal* home_goal,
              Goal*        opponents_goal,

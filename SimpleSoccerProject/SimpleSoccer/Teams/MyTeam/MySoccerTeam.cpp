@@ -50,11 +50,9 @@ void MySoccerTeam::InitStateMachine()
 {
   m_pStateMachine = new StateMachine<AbstSoccerTeam>(this);
 
-  // ExecutePlay
-
   m_pStateMachine->SetCurrentState(MyDefending::Instance());
   m_pStateMachine->SetPreviousState(MyDefending::Instance());
-  m_pStateMachine->SetGlobalState(NULL);
+  m_pStateMachine->SetGlobalState(NULL); // Create PlayGenerator here!!!!
 }
 
 void MySoccerTeam::InitPlayers()

@@ -118,55 +118,6 @@ void Defending::Execute(AbstSoccerTeam* team)
 
 void Defending::Exit(AbstSoccerTeam* team){}
 
-//************************************************************************ DEFENDING GOAL
-
-DefendingGoal* DefendingGoal::Instance()
-{
-  static DefendingGoal instance;
-
-  return &instance;
-}
-
-void DefendingGoal::Enter(AbstSoccerTeam* team)
-{
-#ifdef DEBUG_TEAM_STATES
-  debug_con << team->Name() << " entering DefendingGoal state" << "";
-#endif
-
-  //these define the home regions for this state of each of the players
-  const int BlueRegions[TeamSize] = {1,6,8,3,5};
-  const int RedRegions[TeamSize] = {16,9,11,12,14};
-
-  // TODO: Get the zones that each of the goals are located in and make everyone go there
-
-  //set up the player's home regions
-  if (team->Color() == AbstSoccerTeam::blue)
-  {
-	  team->ChangePlayerHomeRegions(BlueRegions);
-  }
-  else
-  {
-    team->ChangePlayerHomeRegions(RedRegions);
-  }
-  
-  //if a player is in either the Wait or ReturnToHomeRegion states, its
-  //steering target must be updated to that of its new home region
-  team->UpdateTargetsOfWaitingPlayers();
-}
-
-void DefendingGoal::Execute(AbstSoccerTeam* team)
-{
-  //if in control change states
-  if (team->InControl())
-  {
-    team->GetFSM()->ChangeState(Attacking::Instance()); return;
-  }
-}
-
-
-void DefendingGoal::Exit(AbstSoccerTeam* team){}
-
-
 //************************************************************************ KICKOFF
 PrepareForKickOff* PrepareForKickOff::Instance()
 {

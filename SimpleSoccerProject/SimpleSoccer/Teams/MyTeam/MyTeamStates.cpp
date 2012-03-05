@@ -160,6 +160,79 @@ void MyPrepareForKickOff::Exit(AbstSoccerTeam* team)
 		team->Pitch()->SetRedTeamReady();
 }
 
+//************************************************************************ DEFENDING GOAL
+
+DefendGoal* DefendGoal::Instance()
+{
+  static DefendGoal instance;
+
+  return &instance;
+}
+
+void DefendGoal::Enter(AbstSoccerTeam* team)
+{
+#ifdef DEBUG_TEAM_STATES
+  debug_con << team->Name() << " entering Defend Goal state" << "";
+#endif
+
+  //these define the home regions for this state of each of the players
+  const int BlueRegions[TeamSize] = {1,6,8,3,5};
+  const int RedRegions[TeamSize] = {16,9,11,12,14};
+
+  // TODO: Get the zones that each of the goals are located in and make everyone go there
+  // Make 3 players swarm the goal, make the other 2 players support
+
+  //set up the player's home regions
+  if (team->Color() == AbstSoccerTeam::blue)
+  {
+	  team->ChangePlayerHomeRegions(BlueRegions);
+  }
+  else
+  {
+    team->ChangePlayerHomeRegions(RedRegions);
+  }
+
+  //if a player is in either the Wait or ReturnToHomeRegion states, its
+  //steering target must be updated to that of its new home region
+  team->UpdateTargetsOfWaitingPlayers();
+}
+
+void DefendGoal::Execute(AbstSoccerTeam* team)
+{
+  //if in control change states
+  if (team->InControl())
+  {
+    team->GetFSM()->ChangeState(Attacking::Instance()); return;
+  }
+}
+
+void DefendGoal::Exit(AbstSoccerTeam* team){}
+
 //************************************************************************ EXECUTE PLAY
 
-// This will be the main controller
+ExecutePlay* ExecutePlay::Instance()
+{
+  static ExecutePlay instance;
+
+  return &instance;
+}
+
+void ExecutePlay::Enter(AbstSoccerTeam* team)
+{
+
+}
+
+void ExecutePlay::Execute(AbstSoccerTeam* team)
+{
+	// Access PlayGenerator, construct a new play
+}
+
+void ExecutePlay::Exit(AbstSoccerTeam* team)
+{
+
+}
+
+bool ExecutePlay::OnMessage(AbstSoccerTeam*, const Telegram&) {
+	// If we receive a message while carrying out a play, determine if carrying out that message would interrupt the current play
+	return false;
+}

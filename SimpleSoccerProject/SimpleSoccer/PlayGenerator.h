@@ -5,12 +5,14 @@
 #include <string>
 #include <vector>
 #include "Play.h"
+#include "misc/json/reader.h"
+#include "misc/json/elements.h"
 
+// This class will act as a controller, containing all of the possible plays that our team can select @ kickoff
 class PlayGenerator
 {
 private:
-	vector<Play> plays;
-	// vector Play plays;
+	std::vector<Play> plays;
 
 	const int successWeight = 5;
 	const int failedWeight = 2;
