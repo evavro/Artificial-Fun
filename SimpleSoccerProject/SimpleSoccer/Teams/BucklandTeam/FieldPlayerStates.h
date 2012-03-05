@@ -244,7 +244,8 @@ class MoveToRegion: public State<FieldPlayer>
 {
 private:
 
-	MoveToRegion(){}
+	MoveToRegion() {}
+	MoveToRegion(int region){}
 
 public:
 

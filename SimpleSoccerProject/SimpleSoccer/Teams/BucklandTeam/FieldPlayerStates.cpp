@@ -799,8 +799,6 @@ void FakeOutDribble::Execute(FieldPlayer* player) {
 }
 
 
-
-
 //************************************************************************     INTERCEPT BALL
 
 InterceptBall* InterceptBall::Instance()
@@ -818,6 +816,25 @@ void InterceptBall::Execute(FieldPlayer* player) {
 	// SupportAttacker::Execute
 
 	// player->Steering()->SetTarget
+
+	return;
+}
+
+//************************************************************************     MOVE TO REGION
+
+MoveToRegion* MoveToRegion::Instance()
+{
+  static MoveToRegion instance;
+
+  return &instance;
+}
+
+void MoveToRegion::Enter(FieldPlayer* player) {
+	return;
+}
+
+void MoveToRegion::Execute(FieldPlayer* player) {
+	// player->Steering()->SetTarget(Pitch()->GetRegionFromIndex(index));
 
 	return;
 }
