@@ -160,4 +160,4 @@ void MyPrepareForKickOff::Exit(AbstSoccerTeam* team)
 		team->Pitch()->SetRedTeamReady();
 }
 
-
+//************************************************************************ EXECUTE PLAY

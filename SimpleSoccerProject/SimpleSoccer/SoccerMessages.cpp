@@ -25,12 +25,16 @@ inline std::string MessageToString(int msg)
 
     return "Msg_GoHome";
 
+  case Msg_MoveToRegion:
+
+	return "Msg_MoveToRegion";
+
   case Msg_Wait:
 
     return "Msg_Wait";
 
   default:
 
-    return "INVALID MESSAGE!!";
+	return "INVALID MESSAGE!!";
   }
 }

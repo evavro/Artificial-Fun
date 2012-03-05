@@ -83,5 +83,26 @@ public:
   bool OnMessage(AbstSoccerTeam*, const Telegram&){return false;}
 };
 
+//------------------------------------------------------------------------
+class ExecutePlay : public State<AbstSoccerTeam>
+{
+private:
+
+	ExecutePlay(){}
+
+public:
+
+    //this is a singleton
+  static ExecutePlay* Instance();
+
+  void Enter(AbstSoccerTeam* team);
+
+  void Execute(AbstSoccerTeam* team);
+
+  void Exit(AbstSoccerTeam* team);
+
+  bool OnMessage(AbstSoccerTeam*, const Telegram&){ return false; }
+};
+
 
 #endif

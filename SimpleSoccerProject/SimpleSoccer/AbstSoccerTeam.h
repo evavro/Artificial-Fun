@@ -178,6 +178,10 @@ public:
     //returns true if there is an opponent within radius of position
   bool        isOpponentWithinRadius(Vector2D pos, double rad);
 
+    // returns a list of the opponents within a defined radius
+
+  std::vector<PlayerBase*> getOpponentsWithinRadius(Vector2D pos, double rad);
+
 	void	RegisterPlayers();
 
   const std::vector<PlayerBase*>& Members()const{return m_Players;}  
@@ -234,6 +238,9 @@ public:
 
 
 	void ChangePlayerHomeRegions (const int NewRegions[TeamSize]);
+
+	// TODO - Make this return the region that our team's goal is in (so we can protect it)
+	int getGoalRegion() { return 0; };
 
 
 };

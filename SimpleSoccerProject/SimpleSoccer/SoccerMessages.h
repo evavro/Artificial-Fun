@@ -1,6 +1,8 @@
 #ifndef SOCCER_MESSAGES_H
 #define SOCCER_MESSAGES_H
 
+#define MOVE_TO_REGION 100
+
 #include <string>
 
 enum MessageType
@@ -10,6 +12,7 @@ enum MessageType
   Msg_SupportAttacker,
   Msg_DefendGoal,
   Msg_GoHome,
+  Msg_MoveToRegion,
   Msg_Wait
 };
 

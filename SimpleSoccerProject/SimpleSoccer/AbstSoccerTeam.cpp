@@ -642,6 +642,24 @@ bool AbstSoccerTeam::isOpponentWithinRadius(Vector2D pos, double rad)
   return false;
 }
 
+// TODO: Test this and then just make isOpponentWithinRadius check for size > 0. less code
+std::vector<PlayerBase*> getOpponentsWithinRadius(Vector2D pos, double rad)
+{
+  std::vector<PlayerBase*> found;
+  std::vector<PlayerBase*>::const_iterator end = Opponents()->Members().end();
+  std::vector<PlayerBase*>::const_iterator it;
+
+  for (it=Opponents()->Members().begin(); it !=end; ++it)
+  {
+    if (Vec2DDistanceSq(pos, (*it)->Pos()) < rad*rad)
+    {
+    	found.push_back(*it);
+    }
+  }
+
+  return found;
+}
+
 void AbstSoccerTeam::ChangePlayerHomeRegions(const int NewRegions[TeamSize])
 {
   for (int plyr=0; plyr<TeamSize; ++plyr)

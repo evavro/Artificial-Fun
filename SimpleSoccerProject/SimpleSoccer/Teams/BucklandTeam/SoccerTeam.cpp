@@ -12,7 +12,7 @@
 #include "Game/EntityManager.h"
 #include "Messaging/MessageDispatcher.h"
 #include "../../SoccerMessages.h"
-#include "TeamStates.h"
+#include "MyTeamStates.h"
 #include "Debug/DebugConsole.h"
 #include <windows.h>
 

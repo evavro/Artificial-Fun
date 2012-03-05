@@ -49,7 +49,7 @@ public:
 
   ~MySoccerTeam();
 
-  std::string Name()const{return "MyTeam";}
+  std::string Name()const{return "Blue Eyes White Dragons";}
 
 	void InitStateMachine();
 	void CreatePlayers();

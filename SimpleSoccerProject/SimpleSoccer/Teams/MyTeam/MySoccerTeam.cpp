@@ -50,6 +50,8 @@ void MySoccerTeam::InitStateMachine()
 {
   m_pStateMachine = new StateMachine<AbstSoccerTeam>(this);
 
+  // ExecutePlay
+
   m_pStateMachine->SetCurrentState(MyDefending::Instance());
   m_pStateMachine->SetPreviousState(MyDefending::Instance());
   m_pStateMachine->SetGlobalState(NULL);
@@ -239,6 +241,7 @@ void MySoccerTeam::prepareForKickoff ()
 //  
 void MySoccerTeam::UpdateTargetsOfWaitingPlayers()const
 {
+  // Implement plays here
   std::vector<PlayerBase*>::const_iterator it = m_Players.begin();
 
   for (it; it != m_Players.end(); ++it)

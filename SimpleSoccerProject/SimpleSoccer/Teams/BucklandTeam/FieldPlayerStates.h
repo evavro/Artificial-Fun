@@ -214,5 +214,28 @@ public:
   bool OnMessage(FieldPlayer*, const Telegram&){return false;}
 };
 
+
+
+//------------------------------------------------------------------------
+class MoveToRegion: public State<FieldPlayer>
+{
+private:
+
+	MoveToRegion(){}
+
+public:
+
+  //this is a singleton
+  static MoveToRegion* Instance();
+
+  void Enter(FieldPlayer* player);
+
+  void Execute(FieldPlayer* player);
+
+  void Exit(FieldPlayer* player);
+
+  bool OnMessage(FieldPlayer*, const Telegram&){return false;}
+};
+
   
 #endif

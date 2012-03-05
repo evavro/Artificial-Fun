@@ -16,7 +16,7 @@
 
 
 //uncomment below to send state info to the debug window
-//#define PLAYER_STATE_INFO_ON
+#define PLAYER_STATE_INFO_ON
 
 
 //************************************************************************ Global state
@@ -83,7 +83,15 @@ bool GlobalPlayerState::OnMessage(FieldPlayer* player, const Telegram& telegram)
 
  case Msg_DefendGoal:
 	 {
+		 // TODO!!!! - Determine WHEN this should be called (when there are a lot of opponents by our goal)
 
+		 // Get HomeGoal region by passing in Vector2D vars (player->Team()->getGoalRegion())
+		 player->Steering()->SetTarget(player->Team()->HomeGoal()->Center());
+
+		 //change state - RIGHT NOW GOAL IS A TEAM STATE, SHOULD BE A PLAYER
+		 //player->GetFSM()->ChangeState(DefendGoal::Instance());
+
+		 return true;
 	 }
 
 	 break;
@@ -108,6 +116,16 @@ bool GlobalPlayerState::OnMessage(FieldPlayer* player, const Telegram& telegram)
     }
 
     break;
+
+  case Msg_MoveToRegion:
+    {
+    	//set the target to the exact coordinate
+    	//player->Steering()->SetTarget(*(static_cast<Vector2D*>(telegram.ExtraInfo)));
+
+    	//player->GetFSM()->ChangeState(ReturnToHomeRegion::Instance());
+
+    	return true;
+    }
 
   case Msg_PassToMe:
     {  
@@ -621,11 +639,32 @@ void Dribble::Execute(FieldPlayer* player)
     //and then the ball will be kicked in that direction
     Vector2D direction = player->Heading();
 
-    //calculate the sign (+/-) of the angle between the player heading and the 
-    //facing direction of the goal so that the player rotates around in the 
+
+
+    // TODO Make this angle consider the other enemies that are within the vascinity. Determine if an opponent will be at the angle we are heading. If so, adjust.
+
+    //player->Team()->Opponents()->
+
+    //calculate the sign (+/-) of the angle between the player heading and the
+    //facing direction of the goal so that the player rotates around in the
     //correct direction
     double angle = QuarterPi * -1 *
                  player->Team()->HomeGoal()->Facing().Sign(player->Heading());
+
+    // TODO: Tweak with 0.8
+    // OR player->isThreatened()
+    // get position of opponents
+    // modify the angle to best avoid them while still facing the same direction
+
+    std::vector<PlayerBase*> foundOpponents = player->Team()->getOpponentsWithinRadius(player->Pos(), 0.8);
+    std::vector<PlayerBase*>::const_iterator end = Opponents()->Members().end();
+    std::vector<PlayerBase*>::const_iterator it;
+
+    for (it=player->Team()->Opponents()->Members().begin(); it !=end; ++it)
+    {
+    	//FIXME: Not sure how to interpret this since visual studio won't work and I can't see it in action
+    	//angle += QuarterPi * -1 * player->Heading().Sign(player->Team()->(*it)->Pos());
+    }
 
     Vec2DRotateAroundOrigin(direction, angle);
 
@@ -754,5 +793,7 @@ void Execute(FieldPlayer* player) {
 	// Only call this if we have "faked out" a sufficient distance
 	//player->GetFSM()->ChangeState(Dribble::Instance());
 
+	// set a destination point thats shortly in front of where we're facing
+	// move there, then abrubtly choose a relatively opposite angle (depending on where opponents are and what not)
 	return;
 }
