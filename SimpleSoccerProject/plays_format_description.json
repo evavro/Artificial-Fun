@@ -34,11 +34,11 @@
 					"positions": [
 					
 					]
-				}],
+				}
+			],
 				
-				// If continue = true and a play becomes impossible, then, once our team has the ball again, players will revert back to the last state of the play and try to complete it
-				"continue" : "true"
-			},
+			// If continue = true and a play becomes impossible, then, once our team has the ball again, players will revert back to the last state of the play and try to complete it
+			"continue" : "true"
 		},
 
 		// Start of a new play
