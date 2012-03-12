@@ -1,9 +1,10 @@
-// Figured we may as well use JSON for implementing our plays, straight forward and easy to implement
+// This file describes all of the possible plays that our team may choose from upon a kickoff.
+// Figured we may as well use JSON for implementing them, straight forward and easy to implement
 
 // pX = any player (p1, p2, p3, etc. assignments are randomized (and persistent) at the beginning of the game)
 // pB = player that currently has the ball (potentially a new player at each state)
 
-// Will be parsed by: http://libjson.sourceforge.net/
+// Will be parsed by: http://sourceforge.net/projects/cajun-jsonapi/
 
 {
 	"plays": [
