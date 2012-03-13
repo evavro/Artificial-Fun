@@ -1,0 +1,5 @@
+*.obj
+*.old
+*.sbr
+*.vcxproj
+*.opensdf

@@ -7,7 +7,7 @@
 #include "../../SoccerPitch.h"
 
 //uncomment to send state info to debug window
-//#define DEBUG_TEAM_STATES
+#define DEBUG_TEAM_STATES
 #include "Debug/DebugConsole.h"
 
 //************************************************************************ ATTACKING
@@ -83,7 +83,7 @@ void MyDefending::Enter(AbstSoccerTeam* team)
 #endif
 
   //these define the home regions for this state of each of the players
-  const int BlueRegions[TeamSize] = {1,6,8,7,4};
+  const int BlueRegions[TeamSize] = {1,4,4,4,4};
   const int RedRegions[TeamSize] = {16,9,11,10,13};
 
   //set up the player's home regions
@@ -156,5 +156,3 @@ void MyPrepareForKickOff::Exit(AbstSoccerTeam* team)
 	else
 		team->Pitch()->SetRedTeamReady();
 }
-
-

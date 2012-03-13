@@ -6,8 +6,8 @@
 #include "../../FieldPlayer.h"
 #include "misc/utils.h"
 #include "../../SteeringBehaviors.h"
-#include "../BucklandTeam/FieldPlayerStates.h"
-#include "../BucklandTeam/GoalKeeperStates.h"
+#include "MyFieldPlayerStates.h"
+#include "MyGoalKeeperStates.h"
 #include "../../ParamLoader.h"
 #include "2D/geometry.h"
 #include "Game/EntityManager.h"
@@ -80,8 +80,8 @@ void MySoccerTeam::CreatePlayers()
 	//goalkeeper
     m_Players.push_back(new GoalKeeper(this,
                                1,
-                               TendGoal::Instance(),
-							   GlobalKeeperState::Instance(),
+                               MyTendGoal::Instance(),
+							   MyGlobalKeeperState::Instance(),
                                Vector2D(0,1),
                                Vector2D(0.0, 0.0),
                                Prm.PlayerMass,
@@ -160,8 +160,8 @@ void MySoccerTeam::CreatePlayers()
      //goalkeeper
     m_Players.push_back(new GoalKeeper(this,
                                16,
-                               TendGoal::Instance(),
-                               GlobalKeeperState::Instance(),
+                               MyTendGoal::Instance(),
+                               MyGlobalKeeperState::Instance(),
                                Vector2D(0,-1),
                                Vector2D(0.0, 0.0),
                                Prm.PlayerMass,
@@ -248,12 +248,14 @@ void MySoccerTeam::UpdateTargetsOfWaitingPlayers()const
       //cast to a field player
       FieldPlayer* plyr = static_cast<FieldPlayer*>(*it);
       
-      if ( plyr->GetFSM()->isInState(*Wait::Instance()) ||
-           plyr->GetFSM()->isInState(*ReturnToHomeRegion::Instance()) )
+      if ( plyr->GetFSM()->isInState(*Wait::Instance()))
+	  {
+		  plyr->GetFSM()->ChangeState(ChaseBall::Instance());
+	  }
+	  else if(plyr->GetFSM()->isInState(*ReturnToHomeRegion::Instance()) )
       {
         plyr->Steering()->SetTarget(plyr->HomeRegion()->Center());
       }
     }
   }
 }
-

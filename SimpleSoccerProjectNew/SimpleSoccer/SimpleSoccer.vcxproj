@@ -328,6 +328,8 @@
     <ClCompile Include="Teams\BucklandTeam\SoccerTeam.cpp" />
     <ClCompile Include="Teams\BucklandTeam\SoccerTeamMaker.cpp" />
     <ClCompile Include="Teams\BucklandTeam\TeamStates.cpp" />
+    <ClCompile Include="Teams\MyTeam\MyFieldPlayerStates.cpp" />
+    <ClCompile Include="Teams\MyTeam\MyGoalKeeperStates.cpp" />
     <ClCompile Include="Teams\MyTeam\MySoccerTeam.cpp" />
     <ClCompile Include="Teams\MyTeam\MySoccerTeamMaker.cpp" />
     <ClCompile Include="Teams\MyTeam\MyTeamStates.cpp" />
@@ -378,6 +380,8 @@
     <ClInclude Include="Teams\BucklandTeam\SoccerTeam.h" />
     <ClInclude Include="Teams\BucklandTeam\SoccerTeamMaker.h" />
     <ClInclude Include="Teams\BucklandTeam\TeamStates.h" />
+    <ClInclude Include="Teams\MyTeam\MyFieldPlayerStates.h" />
+    <ClInclude Include="Teams\MyTeam\MyGoalKeeperStates.h" />
     <ClInclude Include="Teams\MyTeam\MySoccerTeam.h" />
     <ClInclude Include="Teams\MyTeam\MySoccerTeamMaker.h" />
     <ClInclude Include="Teams\MyTeam\MyTeamStates.h" />

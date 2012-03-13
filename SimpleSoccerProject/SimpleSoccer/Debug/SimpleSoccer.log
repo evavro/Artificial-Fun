@@ -1,24 +1,75 @@
-﻿Build started 2/22/2012 4:22:35 PM.
-     1>Project "C:\Users\Teaja\Documents\Visual Studio 2010\Projects\LabSimpleSoccerProject\SimpleSoccer\SimpleSoccer.vcxproj" on node 2 (build target(s)).
+﻿Build started 3/12/2012 7:25:52 PM.
+     1>Project "C:\Users\Teaja\Documents\Artificial-Fun\SimpleSoccerProject\SimpleSoccer\SimpleSoccer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating ".\Debug\SimpleSoccer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         All outputs are up-to-date.
-       ResourceCompile:
-         All outputs are up-to-date.
-       ManifestResourceCompile:
-         All outputs are up-to-date.
-       Link:
-         All outputs are up-to-date.
-       Manifest:
-         All outputs are up-to-date.
-       BscMake:
-         All outputs are up-to-date.
-       FinalizeBuildStatus:
-         Deleting file ".\Debug\SimpleSoccer.unsuccessfulbuild".
-         Touching ".\Debug\SimpleSoccer.lastbuildstate".
-     1>Done Building Project "C:\Users\Teaja\Documents\Visual Studio 2010\Projects\LabSimpleSoccerProject\SimpleSoccer\SimpleSoccer.vcxproj" (build target(s)).
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\Common /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt AbstSoccerTeam.cpp main.cpp ParamLoader.cpp SoccerPitch.cpp SteeringBehaviors.cpp SupportSpotCalculator.cpp TeamMaker.cpp ..\Common\Messaging\MessageDispatcher.cpp SoccerMessages.cpp ..\Common\Game\BaseGameEntity.cpp ..\Common\Game\EntityManager.cpp FieldPlayer.cpp Goalkeeper.cpp PlayerBase.cpp SoccerBall.cpp ..\Common\misc\Cgdi.cpp ..\Common\Debug\DebugConsole.cpp ..\Common\misc\FrameCounter.cpp ..\Common\misc\iniFileLoaderBase.cpp ..\Common\Time\PrecisionTimer.cpp ..\Common\2D\Vector2d.cpp ..\Common\misc\WindowUtils.cpp Teams\BucklandTeam\FieldPlayerStates.cpp Teams\BucklandTeam\GoalKeeperStates.cpp Teams\BucklandTeam\SoccerTeam.cpp Teams\BucklandTeam\SoccerTeamMaker.cpp Teams\BucklandTeam\TeamStates.cpp Teams\MyTeam\MySoccerTeam.cpp Teams\MyTeam\MySoccerTeamMaker.cpp Teams\MyTeam\MyTeamStates.cpp
+         AbstSoccerTeam.cpp
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\abstsoccerteam.cpp(408): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\abstsoccerteam.cpp(409): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+         main.cpp
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\main.cpp(436): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+         ParamLoader.cpp
+         SoccerPitch.cpp
+         SteeringBehaviors.cpp
+         SupportSpotCalculator.cpp
+         TeamMaker.cpp
+         MessageDispatcher.cpp
+         SoccerMessages.cpp
+         BaseGameEntity.cpp
+         EntityManager.cpp
+         FieldPlayer.cpp
+         Goalkeeper.cpp
+         PlayerBase.cpp
+         SoccerBall.cpp
+         Cgdi.cpp
+         DebugConsole.cpp
+         FrameCounter.cpp
+         iniFileLoaderBase.cpp
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\common\misc\inifileloaderbase.cpp(9): warning C4305: 'argument' : truncation from 'int' to 'char'
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\common\misc\inifileloaderbase.cpp(9): warning C4309: 'argument' : truncation of constant value
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\common\misc\inifileloaderbase.cpp(57): warning C4129: ';' : unrecognized character escape sequence
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\common\misc\inifileloaderbase.cpp(109): warning C4129: ';' : unrecognized character escape sequence
+         PrecisionTimer.cpp
+         Generating Code...
+         Compiling...
+         Vector2d.cpp
+         WindowUtils.cpp
+         FieldPlayerStates.cpp
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\fieldplayerstates.cpp(660): error C2227: left of '->Members' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\fieldplayerstates.cpp(660): error C2228: left of '.end' must have class/struct/union
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\fieldplayerstates.cpp(660): error C3861: 'Opponents': identifier not found
+         GoalKeeperStates.cpp
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\fieldplayerstates.h(220): error C2011: 'InterceptBall' : 'class' type redefinition
+                 c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\goalkeeperstates.h(66) : see declaration of 'InterceptBall'
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\goalkeeperstates.cpp(47): error C2027: use of undefined type 'InterceptBall'
+                 c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\goalkeeperstates.h(66) : see declaration of 'InterceptBall'
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\goalkeeperstates.cpp(109): error C2027: use of undefined type 'InterceptBall'
+                 c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\goalkeeperstates.h(66) : see declaration of 'InterceptBall'
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\goalkeeperstates.cpp(174): error C2027: use of undefined type 'InterceptBall'
+                 c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\goalkeeperstates.h(66) : see declaration of 'InterceptBall'
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\goalkeeperstates.cpp(176): error C2027: use of undefined type 'InterceptBall'
+                 c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\goalkeeperstates.h(66) : see declaration of 'InterceptBall'
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\goalkeeperstates.cpp(176): fatal error C1903: unable to recover from previous error(s); stopping compilation
+         SoccerTeam.cpp
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\goalkeeperstates.h(66): error C2011: 'InterceptBall' : 'class' type redefinition
+                 c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\fieldplayerstates.h(220) : see declaration of 'InterceptBall'
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\soccerteam.cpp(15): fatal error C1083: Cannot open include file: 'MyTeamStates.h': No such file or directory
+         SoccerTeamMaker.cpp
+         TeamStates.cpp
+         MySoccerTeam.cpp
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\goalkeeperstates.h(66): error C2011: 'InterceptBall' : 'class' type redefinition
+                 c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\bucklandteam\fieldplayerstates.h(220) : see declaration of 'InterceptBall'
+         MySoccerTeamMaker.cpp
+         MyTeamStates.cpp
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\myteam\myteamstates.cpp(205): error C2653: 'Attacking' : is not a class or namespace name
+     1>c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\myteam\myteamstates.cpp(235): error C2084: function 'bool ExecutePlay::OnMessage(AbstSoccerTeam *,const Telegram &)' already has a body
+                 c:\users\teaja\documents\artificial-fun\simplesoccerproject\simplesoccer\teams\myteam\myteamstates.h(127) : see previous definition of 'OnMessage'
+         Generating Code...
+     1>Done Building Project "C:\Users\Teaja\Documents\Artificial-Fun\SimpleSoccerProject\SimpleSoccer\SimpleSoccer.vcxproj" (build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:03.18
+Time Elapsed 00:01:21.07

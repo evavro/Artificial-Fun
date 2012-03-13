@@ -126,6 +126,12 @@
     <ClCompile Include="Teams\MyTeam\MyTeamStates.cpp">
       <Filter>Teams\MyTeam</Filter>
     </ClCompile>
+    <ClCompile Include="Teams\MyTeam\MyFieldPlayerStates.cpp">
+      <Filter>Teams\MyTeam</Filter>
+    </ClCompile>
+    <ClCompile Include="Teams\MyTeam\MyGoalKeeperStates.cpp">
+      <Filter>Teams\MyTeam</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstSoccerTeam.h">
@@ -271,6 +277,12 @@
     </ClInclude>
     <ClInclude Include="Teams\BucklandTeam\GoalKeeperStates.h">
       <Filter>Teams\BucklandTeam</Filter>
+    </ClInclude>
+    <ClInclude Include="Teams\MyTeam\MyFieldPlayerStates.h">
+      <Filter>Teams\MyTeam</Filter>
+    </ClInclude>
+    <ClInclude Include="Teams\MyTeam\MyGoalKeeperStates.h">
+      <Filter>Teams\MyTeam</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

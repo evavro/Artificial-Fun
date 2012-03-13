@@ -726,11 +726,3 @@ void ReceiveBall::Exit(FieldPlayer* player)
 
   player->Team()->SetReceiver(NULL);
 }
-
-
-
-
- 
-
-
-
