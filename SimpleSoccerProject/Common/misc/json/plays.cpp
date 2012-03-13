@@ -1,4 +1,4 @@
-#include "Jzon.h"
+#include "Jzon.cpp"
 #include <iostream>
 
 int main() {
@@ -28,3 +28,4 @@ int main() {
 
     return 0;
 }
+ 
