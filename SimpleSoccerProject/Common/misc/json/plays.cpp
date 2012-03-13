@@ -1,13 +1,9 @@
-#include "PlayGenerator.h"
-#include "misc/json/Jzon.h"
+#include "Jzon.cpp"
 #include <iostream>
 
-PlayGenerator::PlayGenerator(void)
-{
-	// Load in a file and parse it using cajun (with a string)
-
+int main() {
 	Jzon::Object rootNode;
-	Jzon::FileReader::ReadFile("../plays_format_description.json", rootNode);
+	Jzon::FileReader::ReadFile("../../plays_format_description.json", rootNode);
 
 	if(rootNode.Get("plays").IsArray())
 	{
@@ -23,15 +19,13 @@ PlayGenerator::PlayGenerator(void)
 			if(node.IsValue())
 				std::cout << node.AsString();
 			else if (node.IsArray())
-				std::cout << "*Array*";
+				std::cout << "*Array* " << node.AsString();
 			else if (node.IsObject())
-				std::cout << "*Object*";
+				std::cout << "*Object* " << node.AsString();
 				std::cout << std::endl;
 		}
-	}
-}
+	}    
 
-PlayGenerator::~PlayGenerator(void)
-{
-
+    return 0;
 }
+ 
