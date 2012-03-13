@@ -93,9 +93,9 @@ void MySoccerTeam::CreatePlayers()
  
     //create the players
     m_Players.push_back(new FieldPlayer(this,
-                               6,
-                               Wait::Instance(),
-							   GlobalPlayerState::Instance(),
+                               5,
+                               MyWait::Instance(),
+							   MyGlobalPlayerState::Instance(),
                                Vector2D(0,1),
                                Vector2D(0.0, 0.0),
                                Prm.PlayerMass,
@@ -108,9 +108,9 @@ void MySoccerTeam::CreatePlayers()
 
 
         m_Players.push_back(new FieldPlayer(this,
-                               8,
-                               Wait::Instance(),
-                               GlobalPlayerState::Instance(),
+                               3,
+                               MyWait::Instance(),
+                               MyGlobalPlayerState::Instance(),
                                Vector2D(0,1),
                                Vector2D(0.0, 0.0),
                                Prm.PlayerMass,
@@ -125,9 +125,9 @@ void MySoccerTeam::CreatePlayers()
 
 
         m_Players.push_back(new FieldPlayer(this,
-                               3,
-                               Wait::Instance(),
-                               GlobalPlayerState::Instance(),
+                               8,
+                               MyWait::Instance(),
+                               MyGlobalPlayerState::Instance(),
                                Vector2D(0,1),
                                Vector2D(0.0, 0.0),
                                Prm.PlayerMass,
@@ -139,9 +139,9 @@ void MySoccerTeam::CreatePlayers()
 
 
         m_Players.push_back(new FieldPlayer(this,
-                               5,
-                               Wait::Instance(),
-                               GlobalPlayerState::Instance(),
+                               6,
+                               MyWait::Instance(),
+                               MyGlobalPlayerState::Instance(),
                                Vector2D(0,1),
                                Vector2D(0.0, 0.0),
                                Prm.PlayerMass,
@@ -173,8 +173,8 @@ void MySoccerTeam::CreatePlayers()
 
     m_Players.push_back(new FieldPlayer(this,
                                9,
-                               Wait::Instance(),
-                               GlobalPlayerState::Instance(),
+                               MyWait::Instance(),
+                               MyGlobalPlayerState::Instance(),
                                Vector2D(0,-1),
                                Vector2D(0.0, 0.0),
                                Prm.PlayerMass,
@@ -186,8 +186,8 @@ void MySoccerTeam::CreatePlayers()
 
     m_Players.push_back(new FieldPlayer(this,
                                11,
-                               Wait::Instance(),
-                               GlobalPlayerState::Instance(),
+                               MyWait::Instance(),
+                               MyGlobalPlayerState::Instance(),
                                Vector2D(0,-1),
                                Vector2D(0.0, 0.0),
                                Prm.PlayerMass,
@@ -201,8 +201,8 @@ void MySoccerTeam::CreatePlayers()
  
     m_Players.push_back(new FieldPlayer(this,
                                12,
-                               Wait::Instance(),
-                               GlobalPlayerState::Instance(),
+                               MyWait::Instance(),
+                               MyGlobalPlayerState::Instance(),
                                Vector2D(0,-1),
                                Vector2D(0.0, 0.0),
                                Prm.PlayerMass,
@@ -215,8 +215,8 @@ void MySoccerTeam::CreatePlayers()
 
     m_Players.push_back(new FieldPlayer(this,
                                14,
-                               Wait::Instance(),
-                               GlobalPlayerState::Instance(),
+                               MyWait::Instance(),
+                               MyGlobalPlayerState::Instance(),
                                Vector2D(0,-1),
                                Vector2D(0.0, 0.0),
                                Prm.PlayerMass,
@@ -248,11 +248,11 @@ void MySoccerTeam::UpdateTargetsOfWaitingPlayers()const
       //cast to a field player
       FieldPlayer* plyr = static_cast<FieldPlayer*>(*it);
       
-      if ( plyr->GetFSM()->isInState(*Wait::Instance()))
+      if ( plyr->GetFSM()->isInState(*MyWait::Instance()))
 	  {
-		  plyr->GetFSM()->ChangeState(ChaseBall::Instance());
+		  plyr->GetFSM()->ChangeState(MyChaseBall::Instance());
 	  }
-	  else if(plyr->GetFSM()->isInState(*ReturnToHomeRegion::Instance()) )
+	  else if(plyr->GetFSM()->isInState(*MyReturnToHomeRegion::Instance()) )
       {
         plyr->Steering()->SetTarget(plyr->HomeRegion()->Center());
       }

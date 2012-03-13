@@ -27,7 +27,7 @@ void MyAttacking::Enter(AbstSoccerTeam* team)
 //#endif
 
   //these define the home regions for this state of each of the players
-  const int BlueRegions[TeamSize] = {1,9,11,7,4};
+  const int BlueRegions[TeamSize] = {1,9,11,4,4};
   const int RedRegions[TeamSize] = {16,8,6,10,13};
 
   //set up the player's home regions
@@ -84,7 +84,7 @@ void MyDefending::Enter(AbstSoccerTeam* team)
 
   //these define the home regions for this state of each of the players
   const int BlueRegions[TeamSize] = {1,4,4,4,4};
-  const int RedRegions[TeamSize] = {16,9,11,10,13};
+  const int RedRegions[TeamSize] = {16,13,13,13,13};
 
   //set up the player's home regions
   if (team->Color() == AbstSoccerTeam::blue)

@@ -328,7 +328,7 @@ void MyReturnToHomeRegion::Execute(FieldPlayer* player)
          (player->Team()->Receiver() == NULL) &&
          !player->Pitch()->GoalKeeperHasBall())
     {
-      player->GetFSM()->ChangeState(MyChaseBall::Instance());
+     // player->GetFSM()->ChangeState(MyChaseBall::Instance());
 
       return;
     }
@@ -337,12 +337,13 @@ void MyReturnToHomeRegion::Execute(FieldPlayer* player)
   //if game is on and close enough to home, change state to wait and set the 
   //player target to his current position.(so that if he gets jostled out of 
   //position he can move back to it)
-  /*if (player->Pitch()->GameOn() && player->HomeRegion()->Inside(player->Pos(),
+  if (player->Pitch()->GameOn() && player->HomeRegion()->Inside(player->Pos(),
                                                              Region::halfsize))
   {
     player->Steering()->SetTarget(player->Pos());
     player->GetFSM()->ChangeState(MyWait::Instance());
-  }*/
+  }
+
   //if game is not on the player must return much closer to the center of his
   //home region
   else if(!player->Pitch()->GameOn() && player->AtTarget())
@@ -382,8 +383,8 @@ void MyWait::Enter(FieldPlayer* player)
   {
     player->Steering()->SetTarget(player->HomeRegion()->Center());
   }
-  else
-	  player->GetFSM()->ChangeState(MyChaseBall::Instance());
+  //else
+	  //player->GetFSM()->ChangeState(MyChaseBall::Instance());
 }
 
 void MyWait::Execute(FieldPlayer* player)
@@ -407,7 +408,7 @@ void MyWait::Execute(FieldPlayer* player)
     player->TrackBall();
   }
   
-	player->GetFSM()->ChangeState(MyChaseBall::Instance());
+	//player->GetFSM()->ChangeState(MyChaseBall::Instance());
 
   //if this player's team is controlling AND this player is not the attacker
   //AND is further up the field than the attacker he should request a pass.
@@ -425,8 +426,8 @@ void MyWait::Execute(FieldPlayer* player)
    //if the ball is nearer this player than any other team member  AND
     //there is not an assigned receiver AND neither goalkeeper has
     //the ball, go chase it
-   if (/*player->isClosestTeamMemberToBall() &&
-       player->Team()->Receiver() == NULL  &&*/
+   if (player->isClosestTeamMemberToBall() &&
+       player->Team()->Receiver() == NULL  &&
        !player->Pitch()->GoalKeeperHasBall())
    {
      player->GetFSM()->ChangeState(MyChaseBall::Instance());

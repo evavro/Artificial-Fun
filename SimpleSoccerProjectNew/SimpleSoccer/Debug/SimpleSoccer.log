@@ -1,10 +1,10 @@
-﻿Build started 3/13/2012 5:35:31 PM.
+﻿Build started 3/13/2012 6:50:16 PM.
      1>Project "C:\Users\Teaja\Documents\Artificial-Fun\SimpleSoccerProjectNew\SimpleSoccer\SimpleSoccer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating ".\Debug\SimpleSoccer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\Common /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt Teams\MyTeam\MyTeamStates.cpp
-         MyTeamStates.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\Common /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt Teams\MyTeam\MyFieldPlayerStates.cpp
+         MyFieldPlayerStates.cpp
        ResourceCompile:
          All outputs are up-to-date.
        ManifestResourceCompile:
@@ -51,7 +51,7 @@
          All outputs are up-to-date.
          SimpleSoccer.vcxproj -> C:\Users\Teaja\Documents\Artificial-Fun\SimpleSoccerProjectNew\SimpleSoccer\.\Debug\SimpleSoccer.exe
        BscMake:
-         All outputs are up-to-date.
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o".\Debug\SimpleSoccer.bsc" .\Debug\AbstSoccerTeam.sbr .\Debug\main.sbr .\Debug\ParamLoader.sbr .\Debug\SoccerPitch.sbr .\Debug\SteeringBehaviors.sbr .\Debug\SupportSpotCalculator.sbr .\Debug\TeamMaker.sbr .\Debug\MessageDispatcher.sbr .\Debug\SoccerMessages.sbr .\Debug\BaseGameEntity.sbr .\Debug\EntityManager.sbr .\Debug\FieldPlayer.sbr .\Debug\Goalkeeper.sbr .\Debug\PlayerBase.sbr .\Debug\SoccerBall.sbr .\Debug\Cgdi.sbr .\Debug\DebugConsole.sbr .\Debug\FrameCounter.sbr .\Debug\iniFileLoaderBase.sbr .\Debug\PrecisionTimer.sbr .\Debug\Vector2d.sbr .\Debug\WindowUtils.sbr .\Debug\FieldPlayerStates.sbr .\Debug\GoalKeeperStates.sbr .\Debug\SoccerTeam.sbr .\Debug\SoccerTeamMaker.sbr .\Debug\TeamStates.sbr .\Debug\MyFieldPlayerStates.sbr .\Debug\MyGoalKeeperStates.sbr .\Debug\MySoccerTeam.sbr .\Debug\MySoccerTeamMaker.sbr .\Debug\MyTeamStates.sbr
        FinalizeBuildStatus:
          Deleting file ".\Debug\SimpleSoccer.unsuccessfulbuild".
          Touching ".\Debug\SimpleSoccer.lastbuildstate".
@@ -59,4 +59,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:05.83
+Time Elapsed 00:00:21.85
