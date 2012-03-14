@@ -32,7 +32,7 @@
       <UniqueIdentifier>{53f2399f-1f56-43a6-9d0a-bf72a6b49d1a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Teams\BEWD_Team">
-      <UniqueIdentifier>{e453cd76-6b3d-4db0-8b82-b1c7af8cdab9}</UniqueIdentifier>
+      <UniqueIdentifier>{4180ac51-31ce-4a93-8aab-22799802baad}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -117,19 +117,19 @@
     <ClCompile Include="Teams\BucklandTeam\TeamStates.cpp">
       <Filter>Teams\BucklandTeam</Filter>
     </ClCompile>
-    <ClCompile Include="Teams\MyTeam\BEWD_FieldPlayerStates.cpp">
+    <ClCompile Include="Teams\BEWD_Team\BEWD_FieldPlayerStates.cpp">
       <Filter>Teams\BEWD_Team</Filter>
     </ClCompile>
-    <ClCompile Include="Teams\MyTeam\BEWD_GoalKeeperStates.cpp">
+    <ClCompile Include="Teams\BEWD_Team\BEWD_GoalKeeperStates.cpp">
       <Filter>Teams\BEWD_Team</Filter>
     </ClCompile>
-    <ClCompile Include="Teams\MyTeam\BEWD_SoccerTeam.cpp">
+    <ClCompile Include="Teams\BEWD_Team\BEWD_SoccerTeam.cpp">
       <Filter>Teams\BEWD_Team</Filter>
     </ClCompile>
-    <ClCompile Include="Teams\MyTeam\BEWD_SoccerTeamMaker.cpp">
+    <ClCompile Include="Teams\BEWD_Team\BEWD_SoccerTeamMaker.cpp">
       <Filter>Teams\BEWD_Team</Filter>
     </ClCompile>
-    <ClCompile Include="Teams\MyTeam\BEWD_TeamStates.cpp">
+    <ClCompile Include="Teams\BEWD_Team\BEWD_TeamStates.cpp">
       <Filter>Teams\BEWD_Team</Filter>
     </ClCompile>
   </ItemGroup>
@@ -269,19 +269,19 @@
     <ClInclude Include="Teams\BucklandTeam\GoalKeeperStates.h">
       <Filter>Teams\BucklandTeam</Filter>
     </ClInclude>
-    <ClInclude Include="Teams\MyTeam\BEWD_FieldPlayerStates.h">
+    <ClInclude Include="Teams\BEWD_Team\BEWD_FieldPlayerStates.h">
       <Filter>Teams\BEWD_Team</Filter>
     </ClInclude>
-    <ClInclude Include="Teams\MyTeam\BEWD_GoalKeeperStates.h">
+    <ClInclude Include="Teams\BEWD_Team\BEWD_GoalKeeperStates.h">
       <Filter>Teams\BEWD_Team</Filter>
     </ClInclude>
-    <ClInclude Include="Teams\MyTeam\BEWD_SoccerTeam.h">
+    <ClInclude Include="Teams\BEWD_Team\BEWD_SoccerTeam.h">
       <Filter>Teams\BEWD_Team</Filter>
     </ClInclude>
-    <ClInclude Include="Teams\MyTeam\BEWD_SoccerTeamMaker.h">
+    <ClInclude Include="Teams\BEWD_Team\BEWD_SoccerTeamMaker.h">
       <Filter>Teams\BEWD_Team</Filter>
     </ClInclude>
-    <ClInclude Include="Teams\MyTeam\BEWD_TeamStates.h">
+    <ClInclude Include="Teams\BEWD_Team\BEWD_TeamStates.h">
       <Filter>Teams\BEWD_Team</Filter>
     </ClInclude>
   </ItemGroup>

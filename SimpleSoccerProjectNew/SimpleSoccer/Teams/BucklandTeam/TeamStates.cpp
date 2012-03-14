@@ -11,10 +11,6 @@
 #include "Debug/DebugConsole.h"
 
 
-
-
-
-
 //************************************************************************ ATTACKING
 
 Attacking* Attacking::Instance()

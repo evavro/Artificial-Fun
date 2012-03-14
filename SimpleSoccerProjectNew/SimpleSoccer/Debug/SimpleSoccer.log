@@ -1,57 +1,19 @@
-﻿Build started 3/14/2012 5:51:10 PM.
+﻿Build started 3/14/2012 7:46:12 PM.
      1>Project "C:\Users\Teaja\Documents\Artificial-Fun\SimpleSoccerProjectNew\SimpleSoccer\SimpleSoccer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating ".\Debug\SimpleSoccer.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\Common /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo".\Debug/" /Fd".\Debug/vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt Teams\MyTeam\BEWD_FieldPlayerStates.cpp
-         BEWD_FieldPlayerStates.cpp
+         All outputs are up-to-date.
        ResourceCompile:
          All outputs are up-to-date.
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug/SimpleSoccer.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\Debug\SimpleSoccer.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\Debug/SimpleSoccer.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE:NO /IMPLIB:".\Debug\SimpleSoccer.lib" /MACHINE:X86 .\Debug\Script1.res
-         .\Debug\SimpleSoccer.exe.embed.manifest.res
-         .\Debug/AbstSoccerTeam.obj
-         .\Debug/main.obj
-         .\Debug/ParamLoader.obj
-         .\Debug/SoccerPitch.obj
-         .\Debug/SteeringBehaviors.obj
-         .\Debug/SupportSpotCalculator.obj
-         .\Debug/TeamMaker.obj
-         .\Debug/MessageDispatcher.obj
-         .\Debug/SoccerMessages.obj
-         .\Debug/BaseGameEntity.obj
-         .\Debug/EntityManager.obj
-         .\Debug/FieldPlayer.obj
-         .\Debug/Goalkeeper.obj
-         .\Debug/PlayerBase.obj
-         .\Debug/SoccerBall.obj
-         .\Debug/Cgdi.obj
-         .\Debug/DebugConsole.obj
-         .\Debug/FrameCounter.obj
-         .\Debug/iniFileLoaderBase.obj
-         .\Debug/PrecisionTimer.obj
-         .\Debug/Vector2d.obj
-         .\Debug/WindowUtils.obj
-         .\Debug/FieldPlayerStates.obj
-         .\Debug/GoalKeeperStates.obj
-         .\Debug/SoccerTeam.obj
-         .\Debug/SoccerTeamMaker.obj
-         .\Debug/TeamStates.obj
-         .\Debug/BEWD_FieldPlayerStates.obj
-         .\Debug/BEWD_GoalKeeperStates.obj
-         .\Debug/BEWD_SoccerTeam.obj
-         .\Debug/BEWD_SoccerTeamMaker.obj
-         .\Debug/BEWD_TeamStates.obj
+         All outputs are up-to-date.
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\Debug\SimpleSoccer.exe.embed.manifest" /manifest .\Debug\SimpleSoccer.exe.intermediate.manifest
          All outputs are up-to-date.
-       LinkEmbedManifest:
-         All outputs are up-to-date.
-         SimpleSoccer.vcxproj -> C:\Users\Teaja\Documents\Artificial-Fun\SimpleSoccerProjectNew\SimpleSoccer\.\Debug\SimpleSoccer.exe
        BscMake:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o".\Debug\SimpleSoccer.bsc" .\Debug\AbstSoccerTeam.sbr .\Debug\main.sbr .\Debug\ParamLoader.sbr .\Debug\SoccerPitch.sbr .\Debug\SteeringBehaviors.sbr .\Debug\SupportSpotCalculator.sbr .\Debug\TeamMaker.sbr .\Debug\MessageDispatcher.sbr .\Debug\SoccerMessages.sbr .\Debug\BaseGameEntity.sbr .\Debug\EntityManager.sbr .\Debug\FieldPlayer.sbr .\Debug\Goalkeeper.sbr .\Debug\PlayerBase.sbr .\Debug\SoccerBall.sbr .\Debug\Cgdi.sbr .\Debug\DebugConsole.sbr .\Debug\FrameCounter.sbr .\Debug\iniFileLoaderBase.sbr .\Debug\PrecisionTimer.sbr .\Debug\Vector2d.sbr .\Debug\WindowUtils.sbr .\Debug\FieldPlayerStates.sbr .\Debug\GoalKeeperStates.sbr .\Debug\SoccerTeam.sbr .\Debug\SoccerTeamMaker.sbr .\Debug\TeamStates.sbr .\Debug\BEWD_FieldPlayerStates.sbr .\Debug\BEWD_GoalKeeperStates.sbr .\Debug\BEWD_SoccerTeam.sbr .\Debug\BEWD_SoccerTeamMaker.sbr .\Debug\BEWD_TeamStates.sbr
+         All outputs are up-to-date.
        FinalizeBuildStatus:
          Deleting file ".\Debug\SimpleSoccer.unsuccessfulbuild".
          Touching ".\Debug\SimpleSoccer.lastbuildstate".
@@ -59,4 +21,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:21.97
+Time Elapsed 00:00:00.30

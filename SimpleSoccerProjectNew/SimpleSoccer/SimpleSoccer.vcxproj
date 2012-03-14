@@ -323,16 +323,16 @@
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</BrowseInformation>
     </ClCompile>
+    <ClCompile Include="Teams\BEWD_Team\BEWD_FieldPlayerStates.cpp" />
+    <ClCompile Include="Teams\BEWD_Team\BEWD_GoalKeeperStates.cpp" />
+    <ClCompile Include="Teams\BEWD_Team\BEWD_SoccerTeam.cpp" />
+    <ClCompile Include="Teams\BEWD_Team\BEWD_SoccerTeamMaker.cpp" />
+    <ClCompile Include="Teams\BEWD_Team\BEWD_TeamStates.cpp" />
     <ClCompile Include="Teams\BucklandTeam\FieldPlayerStates.cpp" />
     <ClCompile Include="Teams\BucklandTeam\GoalKeeperStates.cpp" />
     <ClCompile Include="Teams\BucklandTeam\SoccerTeam.cpp" />
     <ClCompile Include="Teams\BucklandTeam\SoccerTeamMaker.cpp" />
     <ClCompile Include="Teams\BucklandTeam\TeamStates.cpp" />
-    <ClCompile Include="Teams\MyTeam\BEWD_FieldPlayerStates.cpp" />
-    <ClCompile Include="Teams\MyTeam\BEWD_GoalKeeperStates.cpp" />
-    <ClCompile Include="Teams\MyTeam\BEWD_SoccerTeam.cpp" />
-    <ClCompile Include="Teams\MyTeam\BEWD_SoccerTeamMaker.cpp" />
-    <ClCompile Include="Teams\MyTeam\BEWD_TeamStates.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstSoccerTeam.h" />
@@ -375,16 +375,16 @@
     <ClInclude Include="..\Common\2D\Vector2D.h" />
     <ClInclude Include="..\Common\2D\Wall2D.h" />
     <ClInclude Include="..\Common\misc\WindowUtils.h" />
+    <ClInclude Include="Teams\BEWD_Team\BEWD_FieldPlayerStates.h" />
+    <ClInclude Include="Teams\BEWD_Team\BEWD_GoalKeeperStates.h" />
+    <ClInclude Include="Teams\BEWD_Team\BEWD_SoccerTeam.h" />
+    <ClInclude Include="Teams\BEWD_Team\BEWD_SoccerTeamMaker.h" />
+    <ClInclude Include="Teams\BEWD_Team\BEWD_TeamStates.h" />
     <ClInclude Include="Teams\BucklandTeam\FieldPlayerStates.h" />
     <ClInclude Include="Teams\BucklandTeam\GoalKeeperStates.h" />
     <ClInclude Include="Teams\BucklandTeam\SoccerTeam.h" />
     <ClInclude Include="Teams\BucklandTeam\SoccerTeamMaker.h" />
     <ClInclude Include="Teams\BucklandTeam\TeamStates.h" />
-    <ClInclude Include="Teams\MyTeam\BEWD_FieldPlayerStates.h" />
-    <ClInclude Include="Teams\MyTeam\BEWD_GoalKeeperStates.h" />
-    <ClInclude Include="Teams\MyTeam\BEWD_SoccerTeam.h" />
-    <ClInclude Include="Teams\MyTeam\BEWD_SoccerTeamMaker.h" />
-    <ClInclude Include="Teams\MyTeam\BEWD_TeamStates.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="icon1.ico" />
