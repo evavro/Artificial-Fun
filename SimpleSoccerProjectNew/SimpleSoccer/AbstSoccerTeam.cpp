@@ -405,10 +405,12 @@ bool AbstSoccerTeam::CanShoot(Vector2D  BallPos,
 
     //the y value of the shot position should lay somewhere between two
     //goalposts (taking into consideration the ball diameter)
-    int MinYVal = OpponentsGoal()->LeftPost().y + Pitch()->Ball()->BRadius();
-    int MaxYVal = OpponentsGoal()->RightPost().y - Pitch()->Ball()->BRadius();
+    //int MinYVal = OpponentsGoal()->LeftPost().y + Pitch()->Ball()->BRadius();
+    //int MaxYVal = OpponentsGoal()->RightPost().y - Pitch()->Ball()->BRadius();
+	double MinYVal = OpponentsGoal()->LeftPost().y + Pitch()->Ball()->BRadius();
+    double MaxYVal = OpponentsGoal()->RightPost().y - Pitch()->Ball()->BRadius();
 
-    ShotTarget.y = (double)RandInt(MinYVal, MaxYVal);
+    ShotTarget.y = (double)RandInt((int)MinYVal, (int)MaxYVal);
 
     //make sure striking the ball with the given power is enough to drive
     //the ball over the goal line.

@@ -28,7 +28,7 @@ Attacking* Attacking::Instance()
 void Attacking::Enter(AbstSoccerTeam* team)
 {
 //#ifdef DEBUG_TEAM_STATES
-  debug_con << team->Name() << " entering Attacking state" << "";
+  //debug_con << team->Name() << " entering Attacking state" << "";
 //#endif
 
   //these define the home regions for this state of each of the players
@@ -84,7 +84,7 @@ Defending* Defending::Instance()
 void Defending::Enter(AbstSoccerTeam* team)
 {
 #ifdef DEBUG_TEAM_STATES
-  debug_con << team->Name() << " entering Defending state" << "";
+  //debug_con << team->Name() << " entering Defending state" << "";
 #endif
 
   //these define the home regions for this state of each of the players

@@ -63,7 +63,7 @@ private:
 public:
   
   SupportSpotCalculator(int numX,
-                        int numY,
+                        int nuBEWD_,
                         AbstSoccerTeam* team);
 
   ~SupportSpotCalculator();

@@ -8,7 +8,7 @@
 #include "ParamLoader.h"
 #include "SoccerPitch.h"
 
-#include "debug/DebugConsole.h"
+#include "Debug/DebugConsole.h"
 
 //------------------------------- dtor ----------------------------------------
 //-----------------------------------------------------------------------------
@@ -21,7 +21,7 @@ SupportSpotCalculator::~SupportSpotCalculator()
 //------------------------------- ctor ----------------------------------------
 //-----------------------------------------------------------------------------
 SupportSpotCalculator::SupportSpotCalculator(int           numX,
-                                             int           numY,
+                                             int           nuBEWD_,
                                              AbstSoccerTeam*   team):m_pBestSupportingSpot(NULL),
                                                                   m_pTeam(team)
 {
@@ -32,7 +32,7 @@ SupportSpotCalculator::SupportSpotCalculator(int           numX,
   double HeightOfSSRegion = PlayingField->Height() * 0.8;
   double WidthOfSSRegion  = PlayingField->Width() * 0.9;
   double SliceX = WidthOfSSRegion / numX ;
-  double SliceY = HeightOfSSRegion / numY;
+  double SliceY = HeightOfSSRegion / nuBEWD_;
 
   double left  = PlayingField->Left() + (PlayingField->Width()-WidthOfSSRegion)/2.0 + SliceX/2.0;
   double right = PlayingField->Right() - (PlayingField->Width()-WidthOfSSRegion)/2.0 - SliceX/2.0;
@@ -40,7 +40,7 @@ SupportSpotCalculator::SupportSpotCalculator(int           numX,
 
   for (int x=0; x<(numX/2)-1; ++x)
   {
-    for (int y=0; y<numY; ++y)
+    for (int y=0; y<nuBEWD_; ++y)
     {      
       if (m_pTeam->Color() == AbstSoccerTeam::blue)
       {

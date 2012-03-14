@@ -328,11 +328,11 @@
     <ClCompile Include="Teams\BucklandTeam\SoccerTeam.cpp" />
     <ClCompile Include="Teams\BucklandTeam\SoccerTeamMaker.cpp" />
     <ClCompile Include="Teams\BucklandTeam\TeamStates.cpp" />
-    <ClCompile Include="Teams\MyTeam\MyFieldPlayerStates.cpp" />
-    <ClCompile Include="Teams\MyTeam\MyGoalKeeperStates.cpp" />
-    <ClCompile Include="Teams\MyTeam\MySoccerTeam.cpp" />
-    <ClCompile Include="Teams\MyTeam\MySoccerTeamMaker.cpp" />
-    <ClCompile Include="Teams\MyTeam\MyTeamStates.cpp" />
+    <ClCompile Include="Teams\MyTeam\BEWD_FieldPlayerStates.cpp" />
+    <ClCompile Include="Teams\MyTeam\BEWD_GoalKeeperStates.cpp" />
+    <ClCompile Include="Teams\MyTeam\BEWD_SoccerTeam.cpp" />
+    <ClCompile Include="Teams\MyTeam\BEWD_SoccerTeamMaker.cpp" />
+    <ClCompile Include="Teams\MyTeam\BEWD_TeamStates.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstSoccerTeam.h" />
@@ -380,11 +380,11 @@
     <ClInclude Include="Teams\BucklandTeam\SoccerTeam.h" />
     <ClInclude Include="Teams\BucklandTeam\SoccerTeamMaker.h" />
     <ClInclude Include="Teams\BucklandTeam\TeamStates.h" />
-    <ClInclude Include="Teams\MyTeam\MyFieldPlayerStates.h" />
-    <ClInclude Include="Teams\MyTeam\MyGoalKeeperStates.h" />
-    <ClInclude Include="Teams\MyTeam\MySoccerTeam.h" />
-    <ClInclude Include="Teams\MyTeam\MySoccerTeamMaker.h" />
-    <ClInclude Include="Teams\MyTeam\MyTeamStates.h" />
+    <ClInclude Include="Teams\MyTeam\BEWD_FieldPlayerStates.h" />
+    <ClInclude Include="Teams\MyTeam\BEWD_GoalKeeperStates.h" />
+    <ClInclude Include="Teams\MyTeam\BEWD_SoccerTeam.h" />
+    <ClInclude Include="Teams\MyTeam\BEWD_SoccerTeamMaker.h" />
+    <ClInclude Include="Teams\MyTeam\BEWD_TeamStates.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="icon1.ico" />

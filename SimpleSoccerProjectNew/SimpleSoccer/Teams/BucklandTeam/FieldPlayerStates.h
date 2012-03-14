@@ -4,7 +4,7 @@
 //
 //  Name: FieldPlayerStates.h
 //
-//  Desc: States for the field players of Simple Soccer. See my book
+//  Desc: States for the field players of Simple Soccer. See BEWD_ book
 //        for detailed descriptions
 //
 //  Author: Mat Buckland 2003 (fup@ai-junkie.com)

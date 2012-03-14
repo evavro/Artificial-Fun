@@ -184,7 +184,7 @@ void InterceptBall::Enter(GoalKeeper* keeper)
   keeper->Steering()->PursuitOn();  
 
     #ifdef GOALY_STATE_INFO_ON
-    debug_con << "Goaly " << keeper->ID() << " enters InterceptBall" <<  "";
+    //debug_con << "Goaly " << keeper->ID() << " enters InterceptBall" <<  "";
     #endif
 }
 

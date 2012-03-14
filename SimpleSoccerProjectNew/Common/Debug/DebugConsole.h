@@ -1,5 +1,5 @@
-#ifndef DEBUG_CONSOLE_H
-#define DEBUG_CONSOLE_H
+#ifndef debug_conSOLE_H
+#define debug_conSOLE_H
 #pragma warning (disable:4786)
 //------------------------------------------------------------------------
 //
@@ -8,11 +8,11 @@
 // Desc:   Creates a resizable console window for recording and displaying
 //         debug info.
 //
-//         use the debug_con macro to send text and types to the console
+//         use the //debug_con macro to send text and types to the console
 //         window via the << operator (just like std::cout). Flush the
 //         buffer using "" or the flush macro.  eg. 
 //
-//        debug_con << "Hello World!" << "";
+//        //debug_con << "Hello World!" << "";
 //
 // Author: Mat Buckland 2001 (fup@ai-junkie.com)
 //

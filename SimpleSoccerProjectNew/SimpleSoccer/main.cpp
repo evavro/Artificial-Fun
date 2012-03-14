@@ -12,7 +12,7 @@
 #include "ParamLoader.h"
 #include "Resource.h"
 #include "misc/WindowUtils.h"
-#include "debug/DebugConsole.h"
+#include "Debug/DebugConsole.h"
 #include "Goal.h"
 
 
@@ -21,7 +21,7 @@
 //------------------------------------------------------------------------
 
 char* g_szApplicationName = "Simple Soccer";
-char*	g_szWindowClassName = "MyWindowClass";
+char*	g_szWindowClassName = "BEWD_WindowClass";
 
 SoccerPitch* g_SoccerPitch;
 
@@ -436,7 +436,7 @@ int WINAPI WinMain (HINSTANCE hInstance,
 			redScore, fRedTime, redAdjScore, blueScore, fBlueTime, blueAdjScore);
   //sprintf(buff, "Game Over\nRed: %i = %2.2f \nBlue: %i = %2.2f", 
 	//		redScore, redAdjScore, blueScore, blueAdjScore);  
-  debug_con << buff << "\n";
+  //debug_con << buff << "\n";
   MessageBox(NULL, buff, "Final Result", 0);
   delete g_SoccerPitch;
 
