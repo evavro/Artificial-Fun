@@ -135,6 +135,8 @@ void BEWD_PrepareForKickOff::Enter(AbstSoccerTeam* team)
   team->SetReceiver(NULL);
   team->SetPlayerClosestToBall(NULL);
 
+  // TODO: Implement play generator here
+
   //send Msg_GoHome to each player.
   team->ReturnAllFieldPlayersToHome();
 }

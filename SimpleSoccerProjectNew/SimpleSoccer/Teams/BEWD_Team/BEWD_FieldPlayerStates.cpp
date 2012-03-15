@@ -621,6 +621,31 @@ void BEWD_Dribble::Execute(FieldPlayer* player)
     double angle = QuarterPi * -1 *
                  player->Team()->HomeGoal()->Facing().Sign(player->Heading());
 
+	// START TWEAK
+
+    //std::vector<PlayerBase*> oppsInRadius = player->Team()->getOpponentsWithinRadius(player->Pos(), 0.8);
+	PlayerBase* closestPlayer = player->Team()->PlayerClosestToBall();
+    std::vector<PlayerBase*>::const_iterator end = player->Team()->Opponents()->Members().end();
+    //std::vector<PlayerBase*>::const_iterator it = oppsNearBy;
+
+    // Value that determines if an enemy is in our path
+    const int oppAngThreshold = 20;
+
+	// If there's an enemy in our path while we're dribbling, adjust our angle to avert them
+	if(closestPlayer->Team() != player->Team())
+	{
+		int oppAng = QuarterPi * -1 * player->Heading().Sign(closestPlayer->Pos());
+
+		if(oppAng > oppAngThreshold || oppAng < oppAngThreshold * -1) { // angle = 0
+    		if(oppAng > 0)
+    			angle += (oppAngThreshold * 2);
+
+    		if(oppAng < 0)
+    			angle -= (oppAngThreshold * 2);
+    	}
+	}
+	// END TWEAK
+
     Vec2DRotateAroundOrigin(direction, angle);
 
     //this value works well whjen the player is attempting to control the
