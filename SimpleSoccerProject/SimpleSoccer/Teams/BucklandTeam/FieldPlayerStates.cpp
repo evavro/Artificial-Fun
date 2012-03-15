@@ -85,12 +85,6 @@ bool GlobalPlayerState::OnMessage(FieldPlayer* player, const Telegram& telegram)
 	 {
 		 // TODO!!!! - Determine WHEN this should be called (when there are a lot of opponents by our goal)
 
-		 // Get HomeGoal region by passing in Vector2D vars (player->Team()->getGoalRegion())
-		 player->Steering()->SetTarget(player->Team()->HomeGoal()->Center());
-
-		 //change state - RIGHT NOW GOAL IS A TEAM STATE, SHOULD BE A PLAYER
-		 //player->GetFSM()->ChangeState(DefendGoal::Instance());
-
 		 return true;
 	 }
 
@@ -122,7 +116,15 @@ bool GlobalPlayerState::OnMessage(FieldPlayer* player, const Telegram& telegram)
     	//set the target to the exact coordinate
     	//player->Steering()->SetTarget(*(static_cast<Vector2D*>(telegram.ExtraInfo)));
 
-    	//player->GetFSM()->ChangeState(ReturnToHomeRegion::Instance());
+    	Vector2D reg = player->Team()->Pitch()->GetRegionFromIndex(static_cast<int>(telegram.ExtraInfo))->GetRandomPosition();
+    	std::vector<PlayerBase*> foundOpponents = player->Team()->getOpponentsWithinRadius(reg, 0.8);
+
+    	if(foundOpponents.size() > 2)
+    		return false;
+
+    	player->Steering()->SetTarget(reg);
+
+    	player->GetFSM()->ChangeState(MoveToRegion::Instance());
 
     	return true;
     }
@@ -639,12 +641,6 @@ void Dribble::Execute(FieldPlayer* player)
     //and then the ball will be kicked in that direction
     Vector2D direction = player->Heading();
 
-
-
-    // TODO Make this angle consider the other enemies that are within the vascinity. Determine if an opponent will be at the angle we are heading. If so, adjust.
-
-    //player->Team()->Opponents()->
-
     //calculate the sign (+/-) of the angle between the player heading and the
     //facing direction of the goal so that the player rotates around in the
     //correct direction
@@ -652,17 +648,32 @@ void Dribble::Execute(FieldPlayer* player)
                  player->Team()->HomeGoal()->Facing().Sign(player->Heading());
 
     // TODO: Tweak with 0.8
+    // TODO Make this angle consider the other enemies that are within the vascinity. Determine if an opponent will be at the angle we are heading. If so, adjust.
     // OR player->isThreatened()
     // get position of opponents
     // modify the angle to best avoid them while still facing the same direction
 
-    std::vector<PlayerBase*> foundOpponents = player->Team()->getOpponentsWithinRadius(player->Pos(), 0.8);
-    std::vector<PlayerBase*>::const_iterator end = Opponents()->Members().end();
-    std::vector<PlayerBase*>::const_iterator it;
+    std::vector<PlayerBase*> oppsInRadius = player->Team()->getOpponentsWithinRadius(player->Pos(), 0.8);
+    std::vector<PlayerBase*>::const_iterator end = player->Team()->Opponents()->Members().end();
+    std::vector<PlayerBase*>::const_iterator it = oppsInRadius;
 
-    for (it=player->Team()->Opponents()->Members().begin(); it !=end; ++it)
+    // Value that determines if an enemy is in our path
+    const int oppAngThreshold = 10;
+
+    for (it; it !=end; ++it)
     {
-    	//FIXME: Not sure how to interpret this since visual studio won't work and I can't see it in action
+    	PlayerBase* opp = (*it);
+    	int oppAng = QuarterPi * -1 * player->Heading().Sign(opp->Pos());
+
+    	// negative vals may have to be interpreted as 360
+    	if(oppAng > oppAngThreshold || oppAng < oppAngThreshold * -1) { // angle = 0
+    		if(oppAng > 0)
+    			angle += (oppAngThreshold * 2);
+
+    		if(oppAng < 0)
+    			angle -= (oppAngThreshold * 2);
+    	}
+
     	//angle += QuarterPi * -1 * player->Heading().Sign(player->Team()->(*it)->Pos());
     }
 
@@ -785,11 +796,13 @@ FakeOutDribble* FakeOutDribble::Instance()
   return &instance;
 }
 
-void FakeOutDribble::Enter(FieldPlayer* player) {
+void FakeOutDribble::Enter(FieldPlayer* player)
+{
 	return;
 }
 
-void FakeOutDribble::Execute(FieldPlayer* player) {
+void FakeOutDribble::Execute(FieldPlayer* player)
+{
 	// Only call this if we have "faked out" a sufficient distance
 	//player->GetFSM()->ChangeState(Dribble::Instance());
 
@@ -808,11 +821,13 @@ InterceptBall* InterceptBall::Instance()
   return &instance;
 }
 
-void InterceptBall::Enter(FieldPlayer* player) {
+void InterceptBall::Enter(FieldPlayer* player)
+{
 	return;
 }
 
-void InterceptBall::Execute(FieldPlayer* player) {
+void InterceptBall::Execute(FieldPlayer* player)
+{
 	// SupportAttacker::Execute
 
 	// player->Steering()->SetTarget
@@ -824,17 +839,24 @@ void InterceptBall::Execute(FieldPlayer* player) {
 
 MoveToRegion* MoveToRegion::Instance()
 {
-  static MoveToRegion instance;
+	static MoveToRegion instance;
 
-  return &instance;
+	return &instance;
 }
 
 void MoveToRegion::Enter(FieldPlayer* player) {
 	return;
 }
 
-void MoveToRegion::Execute(FieldPlayer* player) {
-	// player->Steering()->SetTarget(Pitch()->GetRegionFromIndex(index));
+void MoveToRegion::Execute(FieldPlayer* player)
+{
+	//player->Steering()->SetTarget(player->Team()->Pitch()->GetRegionFromIndex(0)->GetRandomPosition());
 
 	return;
+}
+
+void MoveToRegion::Exit(FieldPlayer* player)
+{
+	return;
+}
 }

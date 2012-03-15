@@ -1,0 +1,41 @@
+#include "Jzon.h"
+#include <iostream>
+
+int main()
+{
+        Jzon::Object rootNode;
+        Jzon::FileReader::ReadFile("plays.json", rootNode);
+		
+        for (Jzon::Object::iterator it = rootNode.begin(); it != rootNode.end(); ++it)
+        {
+                std::string name = (*it).first;
+                Jzon::Node &node = (*it).second;
+                        
+                std::cout << name << " = ";
+                if (node.IsValue()) {
+                        std::cout << node.AsString();
+                } else if (node.IsArray()) {
+                        std::cout << "*Array*";
+                } else if (node.IsObject()) {
+                        std::cout << "*Object*";
+				}
+					
+                std::cout << std::endl;
+        }
+
+        /*if (rootNode.Get("listOfStuff").IsArray())
+        {
+                Jzon::Array &stuff = rootNode.Get("listOfStuff").AsArray();
+                for (Jzon::Array::iterator it = stuff.begin(); it != stuff.end(); ++it)
+                {
+                        if ((*it).IsValue())
+                                std::cout << (*it).AsString() << std::endl;
+                }
+        }*/
+
+        return 0;
+}
+
+void parseNode(Jzon::Node & node) {
+	
+}

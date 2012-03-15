@@ -5,8 +5,7 @@
 #include <string>
 #include <vector>
 #include "Play.h"
-#include "misc/json/reader.h"
-#include "misc/json/elements.h"
+
 
 // This class will act as a controller, containing all of the possible plays that our team can select @ kickoff
 class PlayGenerator
@@ -21,9 +20,11 @@ public:
 	PlayGenerator(void);
 	~PlayGenerator(void);
 
-	void applyRandomDeterminedPlay();
-	void applyRandomAdaptivePlay();
-	void analyzeOpponentBehavior();
-	void markSucccessfulPlay(Play*);
-	void markFailedPlay(Play*);
+	void ParseJSON(const JSONNode & node);
+
+	void ApplyRandomDeterminedPlay();
+	void ApplyRandomAdaptivePlay();
+	void AnalyzeOpponentBehavior();
+	void MarkSucccessfulPlay(Play*);
+	void MarkFailedPlay(Play*);
 };

@@ -217,16 +217,16 @@ public:
 
 
 //------------------------------------------------------------------------
-class InterceptBall: public State<FieldPlayer>
+class FieldInterceptBall: public State<FieldPlayer>
 {
 private:
 
-	InterceptBall(){}
+	FieldInterceptBall(){}
 
 public:
 
   //this is a singleton
-  static InterceptBall* Instance();
+  static FieldInterceptBall* Instance();
 
   void Enter(FieldPlayer* player);
 
