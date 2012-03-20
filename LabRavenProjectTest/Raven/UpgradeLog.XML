@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Raven">
+</Property><Property Name="Solution File" Value="C:\Users\Teaja\Documents\Artificial-Fun\LabRavenProjectTest\Raven\Raven.sln">
+</Property><Property Name="Date" Value="Tuesday, March 20, 2012">
+</Property><Property Name="Time" Value="15:13 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Raven.sln" Description="File successfully backed up as C:\Users\Teaja\Documents\Artificial-Fun\LabRavenProjectTest\Raven\Raven.sln.old">
+</Event><Event ErrorLevel="0" Project="Raven" Source="Raven.vcproj" Description="Converting project file 'C:\Users\Teaja\Documents\Artificial-Fun\LabRavenProjectTest\Raven\Raven.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Raven" Source="Raven.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="Raven" Source="Raven.vcproj" Description="MSB8012: $(TargetPath) ('C:\Users\Teaja\Documents\Artificial-Fun\LabRavenProjectTest\Raven\.\Raven___Win32_boundschecker\Raven.exe') does not match the Linker's OutputFile property value '.\Raven___Win32_boundschecker/Raven.exe' ('C:\Users\Teaja\Documents\Artificial-Fun\LabRavenProjectTest\Raven\Raven___Win32_boundschecker/Raven.exe') in project configuration 'boundschecker|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="Raven" Source="Raven.vcproj" Description="MSB8012: $(TargetPath) ('C:\Users\Teaja\Documents\Artificial-Fun\LabRavenProjectTest\Raven\.\Debug\Raven.exe') does not match the Linker's OutputFile property value '.\Debug/Raven.exe' ('C:\Users\Teaja\Documents\Artificial-Fun\LabRavenProjectTest\Raven\Debug/Raven.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="Raven" Source="Raven.vcproj" Description="MSB8012: $(TargetPath) ('C:\Users\Teaja\Documents\Artificial-Fun\LabRavenProjectTest\Raven\.\Release\Raven.exe') does not match the Linker's OutputFile property value '.\Release/Raven.exe' ('C:\Users\Teaja\Documents\Artificial-Fun\LabRavenProjectTest\Raven\Release/Raven.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="Raven" Source="Raven.vcproj" Description="Done converting to new project file 'C:\Users\Teaja\Documents\Artificial-Fun\LabRavenProjectTest\Raven\Raven.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Raven" Source="Raven.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Raven.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Raven.sln" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,151 @@
+Game 1:
+Bot: Buckland-401
+	Kills = 1	Deaths = 7
+	Time = 16.29
+	Adj. Score = -4.31
+Bot: ML_Bot-402
+	Kills = 1	Deaths = 8
+	Time = 15.26
+	Adj. Score = -5.10
+Bot: MAT-403
+	Kills = 8	Deaths = 0
+	Time = 24.60
+	Adj. Score = 8.00
+Bot: MBBot-404
+	Kills = 4	Deaths = 6
+	Time = 11.68
+	Adj. Score = 0.63
+Bot: Mxyzptlk-405
+	Kills = 7	Deaths = 0
+	Time = 19.49
+	Adj. Score = 8.04
+
+
+Winner is Bot: Mxyzptlk-405
+
+
+Game 2:
+Bot: Buckland-401
+	Kills = 3	Deaths = 7
+	Time = 16.54
+	Adj. Score = -3.60
+Bot: MDTBot-402
+	Kills = 5	Deaths = 6
+	Time = 17.68
+	Adj. Score = -0.92
+Bot: Nick & Kelly-403
+	Kills = 6	Deaths = 5
+	Time = 30.02
+	Adj. Score = 1.00
+Bot: CGRP-404
+	Kills = 7	Deaths = 4
+	Time = 17.98
+	Adj. Score = 3.00
+Bot: SPBot-405
+	Kills = 5	Deaths = 4
+	Time = 21.42
+	Adj. Score = 1.00
+
+
+Winner is Bot: CGRP-404
+
+
+Game 3:
+Bot: Buckland-401
+	Kills = 6	Deaths = 4
+	Time = 16.63
+	Adj. Score = 3.50
+Bot: CBJE-402
+	Kills = 8	Deaths = 5
+	Time = 23.73
+	Adj. Score = 3.00
+Bot: JA-ChickenBot-403
+	Kills = 3	Deaths = 8
+	Time = 14.71
+	Adj. Score = -3.10
+Bot: AP-404
+	Kills = 7	Deaths = 10
+	Time = 17.74
+	Adj. Score = -1.74
+Bot: Davis-405
+	Kills = 3	Deaths = 0
+	Time = 7.20
+	Adj. Score = 6.48
+
+
+Winner is Bot: Davis-405
+
+
+Game 4:
+Bot: Buckland-401
+	Kills = 1	Deaths = 6
+	Time = 17.72
+	Adj. Score = -5.00
+Bot: RTBot!-402
+	Kills = 10	Deaths = 2
+	Time = 17.61
+	Adj. Score = 8.00
+Bot: Amoeba-403
+	Kills = 8	Deaths = 6
+	Time = 18.35
+	Adj. Score = 2.00
+Bot: Viceizzle-404
+	Kills = 6	Deaths = 9
+	Time = 15.95
+	Adj. Score = -2.53
+Bot: Trogdor-405
+	Kills = 2	Deaths = 10
+	Time = 19.26
+	Adj. Score = -8.00
+
+
+Winner is Bot: RTBot!-402
+
+
+Game 5:
+Bot: Buckland-401
+	Kills = 2	Deaths = 5
+	Time = 17.07
+	Adj. Score = -3.00
+Bot: Baldwin-402
+	Kills = 3	Deaths = 6
+	Time = 17.19
+	Adj. Score = -3.00
+Bot: RAMROD-403
+	Kills = 10	Deaths = 0
+	Time = 15.67
+	Adj. Score = 10.00
+Bot: RP_Bot-404
+	Kills = 0	Deaths = 4
+	Time = 18.25
+	Adj. Score = -4.00
+
+
+Winner is Bot: RAMROD-403
+
+
+Game Finals:
+Bot: Mxyzptlk-401
+	Kills = 8	Deaths = 0
+	Time = 19.78
+	Adj. Score = 8.00
+Bot: CGRP-402
+	Kills = 4	Deaths = 11
+	Time = 16.82
+	Adj. Score = -6.25
+Bot: Davis-403
+	Kills = 4	Deaths = 2
+	Time = 7.43
+	Adj. Score = 5.12
+Bot: RTBot!-404
+	Kills = 4	Deaths = 6
+	Time = 17.11
+	Adj. Score = -1.33
+Bot: RAMROD-405
+	Kills = 7	Deaths = 8
+	Time = 16.95
+	Adj. Score = -0.28
+
+
+Winner is Bot: Mxyzptlk-401
+

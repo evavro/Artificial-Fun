@@ -1,0 +1,7 @@
+Notes:
+
+Must have path to both "Common" and "Common/lua-5.1.3/include" directories.
+Need to have linked path to lua.lib
+
+
+

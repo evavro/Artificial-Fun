@@ -1,0 +1,17 @@
+Game Over
+Bot: Buckland-401
+	Kills = 3	Deaths = 2
+	Time = 8.86
+	Adj. Score = 1.00
+Bot: Buckland-402
+	Kills = 0	Deaths = 3
+	Time = 7.55
+	Adj. Score = -3.00
+Bot: Burke-403
+	Kills = 2	Deaths = 0
+	Time = 7.22
+	Adj. Score = 2.00
+
+
+Winner is Bot: Burke-403
+
