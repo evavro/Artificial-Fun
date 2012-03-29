@@ -3,3 +3,5 @@
 *.sbr
 *.vcxproj
 *.opensdf
+*.log
+*.DS_Store
