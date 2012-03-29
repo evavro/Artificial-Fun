@@ -110,8 +110,3 @@ void Goal_FollowPath::Render()
   //forward the request to the subgoals
   Goal_Composite<AbstRaven_Bot>::Render();
 }
-  
-
-
-
-
