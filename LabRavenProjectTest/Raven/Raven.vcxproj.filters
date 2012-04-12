@@ -304,25 +304,25 @@
     <ClCompile Include="Bots\RavenBot\Raven_WeaponSystem.cpp">
       <Filter>Bots\RavenBot</Filter>
     </ClCompile>
-    <ClCompile Include="Bots\RBBot\RB_Bot.cpp">
+    <ClCompile Include="Bots\ETBot\ET_Bot.cpp">
       <Filter>Bots\RB_Bot</Filter>
     </ClCompile>
-    <ClCompile Include="Bots\RBBot\RB_BotMaker.cpp">
+    <ClCompile Include="Bots\ETBot\ET_BotMaker.cpp">
       <Filter>Bots\RB_Bot</Filter>
     </ClCompile>
-    <ClCompile Include="Bots\RBBot\RB_BotScriptor.cpp">
+    <ClCompile Include="Bots\ETBot\ET_BotScriptor.cpp">
       <Filter>Bots\RB_Bot</Filter>
     </ClCompile>
-    <ClCompile Include="Bots\RBBot\RB_BotSteeringBehaviors.cpp">
+    <ClCompile Include="Bots\ETBot\ET_BotSteeringBehaviors.cpp">
       <Filter>Bots\RB_Bot</Filter>
     </ClCompile>
-    <ClCompile Include="Bots\RBBot\RB_TargetingSystem.cpp">
+    <ClCompile Include="Bots\ETBot\ET_TargetingSystem.cpp">
       <Filter>Bots\RB_Bot</Filter>
     </ClCompile>
-    <ClCompile Include="Bots\RBBot\RB_WeaponSystem.cpp">
+    <ClCompile Include="Bots\ETBot\ET_WeaponSystem.cpp">
       <Filter>Bots\RB_Bot</Filter>
     </ClCompile>
-    <ClCompile Include="Bots\RBBot\RBGoal_Think.cpp">
+    <ClCompile Include="Bots\ETBot\ETGoal_Think.cpp">
       <Filter>Bots\RB_Bot</Filter>
     </ClCompile>
   </ItemGroup>
@@ -684,25 +684,25 @@
     <ClInclude Include="Bots\RavenBot\Raven_WeaponSystem.h">
       <Filter>Bots\RavenBot</Filter>
     </ClInclude>
-    <ClInclude Include="Bots\RBBot\RB_Bot.h">
+    <ClInclude Include="Bots\ETBot\ET_Bot.h">
       <Filter>Bots\RB_Bot</Filter>
     </ClInclude>
-    <ClInclude Include="Bots\RBBot\RB_BotMaker.h">
+    <ClInclude Include="Bots\ETBot\ET_BotMaker.h">
       <Filter>Bots\RB_Bot</Filter>
     </ClInclude>
-    <ClInclude Include="Bots\RBBot\RB_BotScriptor.h">
+    <ClInclude Include="Bots\ETBot\ET_BotScriptor.h">
       <Filter>Bots\RB_Bot</Filter>
     </ClInclude>
-    <ClInclude Include="Bots\RBBot\RB_BotSteeringBehaviors.h">
+    <ClInclude Include="Bots\ETBot\ET_BotSteeringBehaviors.h">
       <Filter>Bots\RB_Bot</Filter>
     </ClInclude>
-    <ClInclude Include="Bots\RBBot\RB_TargetingSystem.h">
+    <ClInclude Include="Bots\ETBot\ET_TargetingSystem.h">
       <Filter>Bots\RB_Bot</Filter>
     </ClInclude>
-    <ClInclude Include="Bots\RBBot\RB_WeaponSystem.h">
+    <ClInclude Include="Bots\ETBot\ET_WeaponSystem.h">
       <Filter>Bots\RB_Bot</Filter>
     </ClInclude>
-    <ClInclude Include="Bots\RBBot\RBGoal_Think.h">
+    <ClInclude Include="Bots\ETBot\ETGoal_Think.h">
       <Filter>Bots\RB_Bot</Filter>
     </ClInclude>
   </ItemGroup>

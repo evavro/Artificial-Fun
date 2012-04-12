@@ -9,7 +9,7 @@
 //
 //  Desc:   class to select a target from the opponents currently in a bot's
 //          perceptive memory.
-// 2/25/2006 RB
+// 2/25/2006 ET
 // Abstractified for student use in the tournament.
 //-----------------------------------------------------------------------------
 #include "2d/Vector2D.h"

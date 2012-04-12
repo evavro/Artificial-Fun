@@ -9,7 +9,7 @@
 //
 //  Desc:   class to manage all operations specific to weapons and their
 //          deployment
-// 2/26/2006 RB Made abstract to support tournament work.
+// 2/26/2006 ET Made abstract to support tournament work.
 //-----------------------------------------------------------------------------
 #include <map>
 #include "2d/vector2d.h"

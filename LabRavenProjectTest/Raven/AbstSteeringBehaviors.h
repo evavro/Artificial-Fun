@@ -8,7 +8,7 @@
 //  Desc:   class to encapsulate steering behaviors for a Raven_Bot
 //
 //  Author: Mat Buckland 2002 (fup@ai-junkie.com)
-// RB 2/25/2006 Abstractified
+// ET 2/25/2006 Abstractified
 //------------------------------------------------------------------------
 #include <vector>
 #include <windows.h>

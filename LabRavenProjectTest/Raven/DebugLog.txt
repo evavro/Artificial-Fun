@@ -87,3 +87,122 @@ Bot: Burke-403
 
 Winner is Bot: Burke-403
 
+Game Over
+Bot: Buckland-401
+	Kills = 2	Deaths = 4
+	Time = 8.68
+	Adj. Score = -2.00
+Bot: Buckland-402
+	Kills = 3	Deaths = 3
+	Time = 7.67
+	Adj. Score = 0.00
+Bot: Burke-403
+	Kills = 3	Deaths = 1
+	Time = 7.39
+	Adj. Score = 2.00
+
+
+Winner is Bot: Burke-403
+
+Game Over
+Bot: Buckland-401
+	Kills = 0	Deaths = 1
+	Time = 4.67
+	Adj. Score = -0.95
+Bot: Buckland-402
+	Kills = 3	Deaths = 0
+	Time = 4.72
+	Adj. Score = 3.00
+Bot: Burke-403
+	Kills = 0	Deaths = 2
+	Time = 3.39
+	Adj. Score = -0.59
+
+
+Winner is Bot: Buckland-402
+
+Game Over
+Bot: Buckland-401
+	Kills = 0	Deaths = 2
+	Time = 8.15
+	Adj. Score = -2.00
+Bot: Buckland-402
+	Kills = 0	Deaths = 2
+	Time = 7.67
+	Adj. Score = -2.00
+Bot: Burke-403
+	Kills = 4	Deaths = 0
+	Time = 6.26
+	Adj. Score = 4.00
+
+
+Winner is Bot: Burke-403
+
+Game Over
+Bot: Buckland-401
+	Kills = 3	Deaths = 1
+	Time = 9.19
+	Adj. Score = 2.00
+Bot: Buckland-402
+	Kills = 1	Deaths = 2
+	Time = 8.54
+	Adj. Score = -0.65
+Bot: ET_Bot-403
+	Kills = 0	Deaths = 1
+	Time = 7.21
+	Adj. Score = 0.08
+
+
+Winner is Bot: Buckland-401
+
+Game Over
+Bot: Buckland-401
+	Kills = 1	Deaths = 3
+	Time = 8.18
+	Adj. Score = -1.86
+Bot: Buckland-402
+	Kills = 3	Deaths = 1
+	Time = 8.41
+	Adj. Score = 2.00
+Bot: ET_Bot-403
+	Kills = 1	Deaths = 1
+	Time = 53.76
+	Adj. Score = 0.00
+
+
+Winner is Bot: Buckland-402
+
+Game Over
+Bot: Buckland-401
+	Kills = 0	Deaths = 0
+	Time = 4.36
+	Adj. Score = 0.00
+Bot: Buckland-402
+	Kills = 2	Deaths = 0
+	Time = 3.80
+	Adj. Score = 2.00
+Bot: ET_Bot-403
+	Kills = 0	Deaths = 2
+	Time = 3.47
+	Adj. Score = -1.57
+
+
+Winner is Bot: Buckland-402
+
+Game Over
+Bot: Buckland-401
+	Kills = 1	Deaths = 1
+	Time = 9.74
+	Adj. Score = 0.00
+Bot: Buckland-402
+	Kills = 0	Deaths = 4
+	Time = 8.77
+	Adj. Score = -4.00
+Bot: ET_Bot-403
+	Kills = 4	Deaths = 0
+	Time = 8.24
+	Adj. Score = 4.00
+
+
+Winner is Bot: ET_Bot-403
+

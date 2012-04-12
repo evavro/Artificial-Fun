@@ -8,7 +8,7 @@
 //  Author: Mat Buckland (www.ai-junkie.com)
 //
 //  Desc:
-// 2/24/2006 RB Added for tournament purposes
+// 2/24/2006 ET Added for tournament purposes
 //-----------------------------------------------------------------------------
 #include <vector>
 #include <iosfwd>
@@ -224,7 +224,7 @@ public:
   AbstWeaponSystem* const          GetWeaponSys()const{return m_pWeaponSys;}
   Raven_SensoryMemory* const         GetSensoryMem()const{return m_pSensoryMem;}
 
-  // RB Added so that different bots can be rendered in different colors
+  // ET Added so that different bots can be rendered in different colors
   virtual void			SelectBodyPen() = 0;
   virtual void			SelectHeadPen() = 0;
 

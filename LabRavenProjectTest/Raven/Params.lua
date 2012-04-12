@@ -10,7 +10,7 @@ BotNames = {}
 
 BotNames[1] = "Raven_Bot"
 BotNames[2] = "Raven_Bot"
-BotNames[3] = "RB_Bot"
+BotNames[3] = "ET_Bot"
 
 
 --this is the maximum number of search cycles allocated to *all* current path
