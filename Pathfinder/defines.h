@@ -17,11 +17,11 @@
 #define MAP_WIDTH		15
 #define MAP_HEIGHT		10
 
-#define CROSSOVER_RATE	0.95
-#define MUTATION_RATE	0.05
+#define CROSSOVER_RATE	1.0
+#define MUTATION_RATE	0.00
 
-#define POP_SIZE		100
-#define CHROMO_LENGTH	70
+#define POP_SIZE		200
+#define CHROMO_LENGTH	100
 #define GENE_LENGTH		2
 
 #endif
