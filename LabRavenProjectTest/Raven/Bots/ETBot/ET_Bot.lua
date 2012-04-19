@@ -35,11 +35,11 @@ Bot_MemorySpan = 5
 
 --goal tweakers
 Bot_HealthGoalTweaker     = 1.2
-Bot_ShotgunGoalTweaker    = 0.6
+Bot_ShotgunGoalTweaker    = 0.5
 Bot_RailgunGoalTweaker    = 0.5
 Bot_RocketLauncherTweaker = 0.6
 Bot_ExploreTweaker		  = 0.2
-Bot_AggroGoalTweaker      = 0.1
+Bot_AggroGoalTweaker      = 0.2
 
 -------------------------[[ steering parameters ]]-----------------------------
 -------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ ArriveWeight            =  1.0
 
 --how close a neighbour must be before an agent considers it
 --to be within its neighborhood (for separation)
-ViewDistance            =  15.0
+ViewDistance            =  25.0
 
 --max feeler length (was 25 * Bot_Scale)
 -- but Bot_Scale is defined globally and not accessible here

@@ -51,4 +51,3 @@ ET_BotSteering::ET_BotSteering(Raven_Game* world, AbstRaven_Bot* agent):
 
 //---------------------------------dtor ----------------------------------
 ET_BotSteering::~ET_BotSteering(){}
-
